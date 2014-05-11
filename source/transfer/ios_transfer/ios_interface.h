@@ -75,6 +75,35 @@ static const GUID IID_ITransferProgressNotifition =
 
 // 此处是接口的具体定义，其中某些接口要外部程序实现,
 // 内部提供的接口，除了单纯为了得到数据的接口之外，全部以异步实现
+// 所有的字符返回都要由调用者自行释放
+
+// 字符串列表的枚举器 
+class IStringListEnumerator : public IUnknown
+{
+public:
+    virtual HRESULT __stdcall BeginEnum() = 0;
+    virtual HRESULT __stdcall Next(wchar_t** value) = 0;
+    virtual HRESULT __stdcall GetCount(int* count) = 0;
+};
+
+// 应用工具属性名称枚举器
+class IApplicationKeyNamesEnumerator : public IUnknown
+{
+public:
+    virtual HRESULT __stdcall BeginEnum() = 0;
+    virtual HRESULT __stdcall Next(wchar_t** value, 
+                                   ApplicationPropertyType* propertyType) = 0;
+    virtual HRESULT __stdcall GetCount(int* count) = 0;
+};
+
+// ITunes里拥有的文件夹类型枚举器
+class IITunesCommonFolderTypeEnumerator : public IUnknown
+{
+public:
+    virtual HRESULT __stdcall BeginEnum() = 0;
+    virtual HRESULT __stdcall Next(ITunesCommonFolderType* folderType) = 0;
+    virtual HRESULT __stdcall GetCount(int* count) = 0;
+};
 
 // 该接口为外部实现接口，目的是让应用程序收到设备侦听的结果，从而进行操作
 class IDeviceNotifition : public IUnknown
