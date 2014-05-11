@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dll_main.cpp" />
+    <ClCompile Include="class_provider.cpp" />
+    <ClCompile Include="com_factory.cpp" />
+    <ClCompile Include="initialzed_configure.cpp" />
+    <ClCompile Include="unknown.cpp" />
+    <ClCompile Include="device_manager.cpp" />
+    <ClCompile Include="device_info_provider.cpp" />
+    <ClCompile Include="device_describe.cpp" />
+    <ClCompile Include="application_describe.cpp" />
+    <ClCompile Include="file_transfer.cpp" />
+    <ClCompile Include="ios_service_names.cpp" />
+    <ClCompile Include="ios_connector_provider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="export.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ios_interface.h" />
+    <ClInclude Include="class_provider.h" />
+    <ClInclude Include="com_factory.h" />
+    <ClInclude Include="initialzed_configure.h" />
+    <ClInclude Include="unknown.h" />
+    <ClInclude Include="device_manager.h" />
+    <ClInclude Include="device_info_provider.h" />
+    <ClInclude Include="device_describe.h" />
+    <ClInclude Include="application_describe.h" />
+    <ClInclude Include="file_transfer.h" />
+    <ClInclude Include="ios_service_names.h" />
+    <ClInclude Include="ios_connector_provider.h" />
+  </ItemGroup>
+</Project>

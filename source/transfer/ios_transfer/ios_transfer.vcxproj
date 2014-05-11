@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="application_describe.cpp" />
+    <ClCompile Include="class_provider.cpp" />
+    <ClCompile Include="com_factory.cpp" />
+    <ClCompile Include="device_describe.cpp" />
+    <ClCompile Include="device_info_provider.cpp" />
+    <ClCompile Include="device_manager.cpp" />
+    <ClCompile Include="dll_main.cpp" />
+    <ClCompile Include="file_transfer.cpp" />
+    <ClCompile Include="initialzed_configure.cpp" />
+    <ClCompile Include="ios_connector_provider.cpp" />
+    <ClCompile Include="ios_service_names.cpp" />
+    <ClCompile Include="unknown.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\third_party\chromium\base\base.vcxproj">
+      <Project>{ed99d404-f6b3-517a-4ea7-604a10269355}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\chromium\base\third_party\dynamic_annotations\dynamic_annotations.vcxproj">
+      <Project>{b68ee2bd-0ba9-9949-464b-39ffe5cabd0a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\lib_cnary\libcnary.vcxproj">
+      <Project>{69cdcb06-c62e-45f6-9e2b-4313c228f957}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\lib_gen\libgen.vcxproj">
+      <Project>{3e2b717a-7a6f-4ff5-9025-738968045272}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\lib_ios_mobile_device\libimobiledevice.vcxproj">
+      <Project>{6f26c69d-46ee-40ae-92e3-cd205b2c18e0}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\lib_plist\libplist.vcxproj">
+      <Project>{c2fc6aff-553b-4b8f-8158-93d8d50a8c02}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\lib_usb_muxd\libusbmuxd.vcxproj">
+      <Project>{53034340-f651-4acb-8fef-ffe0ff7aa013}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\lib_xml\libxml2\win32\VC10\libxml2.vcxproj">
+      <Project>{1d6039f6-5078-416f-a3af-a36efc7e6a1c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\zlib\zlib.vcxproj">
+      <Project>{2fcd4b66-9cf9-4c8f-bc70-37cd20002d49}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="export.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application_describe.h" />
+    <ClInclude Include="class_provider.h" />
+    <ClInclude Include="com_factory.h" />
+    <ClInclude Include="device_describe.h" />
+    <ClInclude Include="device_info_provider.h" />
+    <ClInclude Include="device_manager.h" />
+    <ClInclude Include="file_transfer.h" />
+    <ClInclude Include="initialzed_configure.h" />
+    <ClInclude Include="ios_connector_provider.h" />
+    <ClInclude Include="ios_interface.h" />
+    <ClInclude Include="ios_service_names.h" />
+    <ClInclude Include="unknown.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{001D1BD0-6795-471A-931D-EC32265F43D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ios_transfer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\obj\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <IncludePath>$(SolutionDir)third_party\lib_plist\include;$(SolutionDir)third_party\lib_ios_mobile_device\include;$(IncludePath)</IncludePath>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\obj</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;IOS_TRANSFER_EXPORTS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(solutionDir);$(solutionDir)\third_party\chromium</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dbghelp.lib;libeay32MTd.lib;ssleay32MTd.lib;libiconv.a;libgcc.a;ws2_32.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>export.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(solutionDir)$(Configuration)\lib\third_party\;$(solutionDir)third_party/open_ssl/lib;$(solutionDir)third_party/lib_gcc;$(solutionDir)third_party/lib_xml/lib;$(solutionDir)third_party/iconv/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IOS_TRANSFER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
