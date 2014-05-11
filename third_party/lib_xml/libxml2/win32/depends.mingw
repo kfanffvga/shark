@@ -1,0 +1,1221 @@
+buf.o: ../buf.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\limits.h d:\tools\mingw\include\ctype.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/tree.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../buf.h ../elfgcchack.h
+c14n.o: ../c14n.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/uri.h \
+ ../include/libxml/xpathInternals.h ../include/libxml/xpath.h \
+ ../include/libxml/c14n.h ../buf.h ../elfgcchack.h
+catalog.o: ../catalog.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\sys\stat.h d:\tools\mingw\include\fcntl.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/uri.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/catalog.h ../buf.h \
+ ../elfgcchack.h
+chvalid.o: ../chvalid.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/chvalid.h ../include/libxml/xmlstring.h \
+ ../elfgcchack.h
+debugXML.o: ../debugXML.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/debugXML.h ../include/libxml/xpath.h \
+ ../include/libxml/HTMLtree.h ../include/libxml/xpathInternals.h \
+ ../include/libxml/uri.h ../include/libxml/relaxng.h ../elfgcchack.h
+dict.o: ../dict.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\limits.h d:\tools\mingw\include\stdlib.h \
+ d:\tools\mingw\include\time.h ../include/libxml/tree.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../elfgcchack.h
+DOCBparser.o: ../DOCBparser.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlerror.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/globals.h ../include/libxml/SAX.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/DOCBparser.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../elfgcchack.h
+encoding.o: ../encoding.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\limits.h d:\tools\mingw\include\ctype.h \
+ d:\tools\mingw\include\stdlib.h d:\tools\mingw\include\errno.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/tree.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/HTMLparser.h ../buf.h \
+ ../enc.h ../elfgcchack.h
+entities.o: ../entities.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h ../save.h \
+ ../elfgcchack.h
+error.o: ../error.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/globals.h ../include/libxml/SAX.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../elfgcchack.h
+globals.o: ../globals.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../elfgcchack.h
+hash.o: ../hash.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h d:\tools\mingw\include\time.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/globals.h ../include/libxml/SAX.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../elfgcchack.h
+HTMLparser.o: ../HTMLparser.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\ctype.h d:\tools\mingw\include\stdlib.h \
+ d:\tools\mingw\include\sys\stat.h d:\tools\mingw\include\fcntl.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/HTMLtree.h ../include/libxml/uri.h ../buf.h ../enc.h \
+ ../elfgcchack.h
+HTMLtree.o: ../HTMLtree.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\ctype.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/HTMLtree.h ../include/libxml/parserInternals.h \
+ ../include/libxml/chvalid.h ../include/libxml/uri.h ../buf.h \
+ ../elfgcchack.h
+legacy.o: ../legacy.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../elfgcchack.h
+list.o: ../list.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../elfgcchack.h
+nanoftp.o: ../nanoftp.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ ../include/wsockcompat.h d:\tools\mingw\include\winsock2.h \
+ d:\tools\mingw\include\windows.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\windef.h d:\tools\mingw\include\winnt.h \
+ d:\tools\mingw\include\winerror.h d:\tools\mingw\include\basetsd.h \
+ d:\tools\mingw\include\pshpack4.h d:\tools\mingw\include\poppack.h \
+ d:\tools\mingw\include\wincon.h d:\tools\mingw\include\winbase.h \
+ d:\tools\mingw\include\wingdi.h d:\tools\mingw\include\winuser.h \
+ d:\tools\mingw\include\winnls.h d:\tools\mingw\include\winver.h \
+ d:\tools\mingw\include\winnetwk.h d:\tools\mingw\include\winreg.h \
+ d:\tools\mingw\include\reason.h d:\tools\mingw\include\winsvc.h \
+ d:\tools\mingw\include\cderr.h d:\tools\mingw\include\dde.h \
+ d:\tools\mingw\include\ddeml.h d:\tools\mingw\include\dlgs.h \
+ d:\tools\mingw\include\imm.h d:\tools\mingw\include\lzexpand.h \
+ d:\tools\mingw\include\mmsystem.h d:\tools\mingw\include\nb30.h \
+ d:\tools\mingw\include\rpc.h d:\tools\mingw\include\rpcdce.h \
+ d:\tools\mingw\include\basetyps.h d:\tools\mingw\include\rpcdcep.h \
+ d:\tools\mingw\include\rpcnsi.h d:\tools\mingw\include\rpcnterr.h \
+ d:\tools\mingw\include\shellapi.h d:\tools\mingw\include\pshpack2.h \
+ d:\tools\mingw\include\winperf.h d:\tools\mingw\include\commdlg.h \
+ d:\tools\mingw\include\unknwn.h d:\tools\mingw\include\objfwd.h \
+ d:\tools\mingw\include\wtypes.h d:\tools\mingw\include\rpcndr.h \
+ d:\tools\mingw\include\rpcnsip.h d:\tools\mingw\include\prsht.h \
+ d:\tools\mingw\include\winspool.h d:\tools\mingw\include\winsock.h \
+ d:\tools\mingw\include\ole2.h d:\tools\mingw\include\objbase.h \
+ d:\tools\mingw\include\stdlib.h d:\tools\mingw\include\objidl.h \
+ d:\tools\mingw\include\cguid.h d:\tools\mingw\include\olectlid.h \
+ d:\tools\mingw\include\oleauto.h d:\tools\mingw\include\oaidl.h \
+ d:\tools\mingw\include\oleidl.h d:\tools\mingw\include\ws2tcpip.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\math.h \
+ d:\tools\mingw\include\stdio.h d:\tools\mingw\include\fcntl.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/uri.h \
+ ../include/libxml/nanoftp.h ../elfgcchack.h
+nanohttp.o: ../nanohttp.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ ../include/wsockcompat.h d:\tools\mingw\include\winsock2.h \
+ d:\tools\mingw\include\windows.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\windef.h d:\tools\mingw\include\winnt.h \
+ d:\tools\mingw\include\winerror.h d:\tools\mingw\include\basetsd.h \
+ d:\tools\mingw\include\pshpack4.h d:\tools\mingw\include\poppack.h \
+ d:\tools\mingw\include\wincon.h d:\tools\mingw\include\winbase.h \
+ d:\tools\mingw\include\wingdi.h d:\tools\mingw\include\winuser.h \
+ d:\tools\mingw\include\winnls.h d:\tools\mingw\include\winver.h \
+ d:\tools\mingw\include\winnetwk.h d:\tools\mingw\include\winreg.h \
+ d:\tools\mingw\include\reason.h d:\tools\mingw\include\winsvc.h \
+ d:\tools\mingw\include\cderr.h d:\tools\mingw\include\dde.h \
+ d:\tools\mingw\include\ddeml.h d:\tools\mingw\include\dlgs.h \
+ d:\tools\mingw\include\imm.h d:\tools\mingw\include\lzexpand.h \
+ d:\tools\mingw\include\mmsystem.h d:\tools\mingw\include\nb30.h \
+ d:\tools\mingw\include\rpc.h d:\tools\mingw\include\rpcdce.h \
+ d:\tools\mingw\include\basetyps.h d:\tools\mingw\include\rpcdcep.h \
+ d:\tools\mingw\include\rpcnsi.h d:\tools\mingw\include\rpcnterr.h \
+ d:\tools\mingw\include\shellapi.h d:\tools\mingw\include\pshpack2.h \
+ d:\tools\mingw\include\winperf.h d:\tools\mingw\include\commdlg.h \
+ d:\tools\mingw\include\unknwn.h d:\tools\mingw\include\objfwd.h \
+ d:\tools\mingw\include\wtypes.h d:\tools\mingw\include\rpcndr.h \
+ d:\tools\mingw\include\rpcnsip.h d:\tools\mingw\include\prsht.h \
+ d:\tools\mingw\include\winspool.h d:\tools\mingw\include\winsock.h \
+ d:\tools\mingw\include\ole2.h d:\tools\mingw\include\objbase.h \
+ d:\tools\mingw\include\stdlib.h d:\tools\mingw\include\objidl.h \
+ d:\tools\mingw\include\cguid.h d:\tools\mingw\include\olectlid.h \
+ d:\tools\mingw\include\oleauto.h d:\tools\mingw\include\oaidl.h \
+ d:\tools\mingw\include\oleidl.h d:\tools\mingw\include\ws2tcpip.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\math.h \
+ d:\tools\mingw\include\stdio.h d:\tools\mingw\include\fcntl.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/nanohttp.h \
+ ../include/libxml/uri.h ../elfgcchack.h
+parser.o: ../parser.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/uri.h ../include/libxml/catalog.h \
+ ../include/libxml/xmlschemastypes.h ../include/libxml/schemasInternals.h \
+ ../include/libxml/xmlschemas.h ../include/libxml/relaxng.h \
+ d:\tools\mingw\include\ctype.h d:\tools\mingw\include\sys\stat.h \
+ d:\tools\mingw\include\fcntl.h ../buf.h ../enc.h \
+ ../include/libxml/xpath.h ../elfgcchack.h
+parserInternals.o: ../parserInternals.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\ctype.h d:\tools\mingw\include\stdlib.h \
+ d:\tools\mingw\include\sys\stat.h d:\tools\mingw\include\fcntl.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/uri.h ../include/libxml/catalog.h ../buf.h ../enc.h \
+ ../elfgcchack.h
+pattern.o: ../pattern.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/pattern.h ../elfgcchack.h
+relaxng.o: ../relaxng.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/uri.h \
+ ../include/libxml/relaxng.h ../include/libxml/xmlschemastypes.h \
+ ../include/libxml/schemasInternals.h ../include/libxml/xmlschemas.h \
+ ../elfgcchack.h
+SAX.o: ../SAX.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/debugXML.h ../include/libxml/xpath.h \
+ ../include/libxml/uri.h ../include/libxml/HTMLtree.h ../elfgcchack.h
+SAX2.o: ../SAX2.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/debugXML.h ../include/libxml/xpath.h \
+ ../include/libxml/uri.h ../include/libxml/HTMLtree.h ../elfgcchack.h
+schematron.o: ../schematron.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/globals.h ../include/libxml/SAX.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/uri.h \
+ ../include/libxml/xpath.h ../include/libxml/xpathInternals.h \
+ ../include/libxml/pattern.h ../include/libxml/schematron.h \
+ ../elfgcchack.h
+threads.o: ../threads.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/xmlmemory.h d:\tools\mingw\include\windows.h \
+ d:\tools\mingw\include\windef.h d:\tools\mingw\include\winnt.h \
+ d:\tools\mingw\include\winerror.h d:\tools\mingw\include\basetsd.h \
+ d:\tools\mingw\include\pshpack4.h d:\tools\mingw\include\poppack.h \
+ d:\tools\mingw\include\wincon.h d:\tools\mingw\include\winbase.h \
+ d:\tools\mingw\include\wingdi.h d:\tools\mingw\include\winuser.h \
+ d:\tools\mingw\include\winnls.h d:\tools\mingw\include\winver.h \
+ d:\tools\mingw\include\winnetwk.h d:\tools\mingw\include\winreg.h \
+ d:\tools\mingw\include\reason.h d:\tools\mingw\include\winsvc.h \
+ d:\tools\mingw\include\cderr.h d:\tools\mingw\include\dde.h \
+ d:\tools\mingw\include\ddeml.h d:\tools\mingw\include\dlgs.h \
+ d:\tools\mingw\include\imm.h d:\tools\mingw\include\lzexpand.h \
+ d:\tools\mingw\include\mmsystem.h d:\tools\mingw\include\nb30.h \
+ d:\tools\mingw\include\rpc.h d:\tools\mingw\include\rpcdce.h \
+ d:\tools\mingw\include\basetyps.h d:\tools\mingw\include\rpcdcep.h \
+ d:\tools\mingw\include\rpcnsi.h d:\tools\mingw\include\rpcnterr.h \
+ d:\tools\mingw\include\shellapi.h d:\tools\mingw\include\pshpack2.h \
+ d:\tools\mingw\include\winperf.h d:\tools\mingw\include\commdlg.h \
+ d:\tools\mingw\include\unknwn.h d:\tools\mingw\include\objfwd.h \
+ d:\tools\mingw\include\wtypes.h d:\tools\mingw\include\rpcndr.h \
+ d:\tools\mingw\include\rpcnsip.h d:\tools\mingw\include\prsht.h \
+ d:\tools\mingw\include\winspool.h d:\tools\mingw\include\winsock.h \
+ d:\tools\mingw\include\mswsock.h d:\tools\mingw\include\ole2.h \
+ d:\tools\mingw\include\objbase.h d:\tools\mingw\include\objidl.h \
+ d:\tools\mingw\include\cguid.h d:\tools\mingw\include\olectlid.h \
+ d:\tools\mingw\include\oleauto.h d:\tools\mingw\include\oaidl.h \
+ d:\tools\mingw\include\oleidl.h d:\tools\mingw\include\process.h \
+ ../elfgcchack.h
+tree.o: ../tree.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\limits.h d:\tools\mingw\include\ctype.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/uri.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/HTMLtree.h \
+ ../include/libxml/debugXML.h ../include/libxml/xpath.h ../buf.h \
+ ../save.h ../elfgcchack.h
+uri.o: ../uri.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/uri.h ../elfgcchack.h
+valid.o: ../valid.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/uri.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../elfgcchack.h
+xinclude.o: ../xinclude.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/uri.h ../include/libxml/xpath.h \
+ ../include/libxml/xpointer.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/xinclude.h ../buf.h ../elfgcchack.h
+xlink.o: ../xlink.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\ctype.h d:\tools\mingw\include\stdlib.h \
+ d:\tools\mingw\include\sys\stat.h d:\tools\mingw\include\fcntl.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../elfgcchack.h
+xmlIO.o: ../xmlIO.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\sys\stat.h \
+ d:\tools\mingw\include\fcntl.h d:\tools\mingw\include\stdlib.h \
+ d:\tools\mingw\include\windows.h d:\tools\mingw\include\windef.h \
+ d:\tools\mingw\include\winnt.h d:\tools\mingw\include\winerror.h \
+ d:\tools\mingw\include\basetsd.h d:\tools\mingw\include\pshpack4.h \
+ d:\tools\mingw\include\poppack.h d:\tools\mingw\include\wincon.h \
+ d:\tools\mingw\include\winbase.h d:\tools\mingw\include\wingdi.h \
+ d:\tools\mingw\include\winuser.h d:\tools\mingw\include\winnls.h \
+ d:\tools\mingw\include\winver.h d:\tools\mingw\include\winnetwk.h \
+ d:\tools\mingw\include\winreg.h d:\tools\mingw\include\reason.h \
+ d:\tools\mingw\include\winsvc.h d:\tools\mingw\include\cderr.h \
+ d:\tools\mingw\include\dde.h d:\tools\mingw\include\ddeml.h \
+ d:\tools\mingw\include\dlgs.h d:\tools\mingw\include\imm.h \
+ d:\tools\mingw\include\lzexpand.h d:\tools\mingw\include\mmsystem.h \
+ d:\tools\mingw\include\nb30.h d:\tools\mingw\include\rpc.h \
+ d:\tools\mingw\include\rpcdce.h d:\tools\mingw\include\basetyps.h \
+ d:\tools\mingw\include\rpcdcep.h d:\tools\mingw\include\rpcnsi.h \
+ d:\tools\mingw\include\rpcnterr.h d:\tools\mingw\include\shellapi.h \
+ d:\tools\mingw\include\pshpack2.h d:\tools\mingw\include\winperf.h \
+ d:\tools\mingw\include\commdlg.h d:\tools\mingw\include\unknwn.h \
+ d:\tools\mingw\include\objfwd.h d:\tools\mingw\include\wtypes.h \
+ d:\tools\mingw\include\rpcndr.h d:\tools\mingw\include\rpcnsip.h \
+ d:\tools\mingw\include\prsht.h d:\tools\mingw\include\winspool.h \
+ d:\tools\mingw\include\winsock.h d:\tools\mingw\include\mswsock.h \
+ d:\tools\mingw\include\ole2.h d:\tools\mingw\include\objbase.h \
+ d:\tools\mingw\include\objidl.h d:\tools\mingw\include\cguid.h \
+ d:\tools\mingw\include\olectlid.h d:\tools\mingw\include\oleauto.h \
+ d:\tools\mingw\include\oaidl.h d:\tools\mingw\include\oleidl.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/uri.h ../include/libxml/nanohttp.h \
+ ../include/libxml/nanoftp.h d:\tools\mingw\include\winsock2.h \
+ ../include/libxml/catalog.h ../buf.h ../enc.h ../elfgcchack.h
+xmlmemory.o: ../xmlmemory.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\time.h d:\tools\mingw\include\stdlib.h \
+ d:\tools\mingw\include\ctype.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../elfgcchack.h
+xmlreader.o: ../xmlreader.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\ctype.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/xmlreader.h \
+ ../include/libxml/relaxng.h ../include/libxml/xmlschemas.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/uri.h \
+ ../include/libxml/xinclude.h ../include/libxml/pattern.h ../buf.h \
+ ../elfgcchack.h
+xmlregexp.o: ../xmlregexp.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/xmlunicode.h \
+ ../elfgcchack.h
+xmlmodule.o: ../xmlmodule.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/xmlmodule.h d:\tools\mingw\include\windows.h \
+ d:\tools\mingw\include\windef.h d:\tools\mingw\include\winnt.h \
+ d:\tools\mingw\include\winerror.h d:\tools\mingw\include\basetsd.h \
+ d:\tools\mingw\include\pshpack4.h d:\tools\mingw\include\poppack.h \
+ d:\tools\mingw\include\wincon.h d:\tools\mingw\include\winbase.h \
+ d:\tools\mingw\include\wingdi.h d:\tools\mingw\include\winuser.h \
+ d:\tools\mingw\include\winnls.h d:\tools\mingw\include\winver.h \
+ d:\tools\mingw\include\winnetwk.h d:\tools\mingw\include\winreg.h \
+ d:\tools\mingw\include\reason.h d:\tools\mingw\include\winsvc.h \
+ d:\tools\mingw\include\cderr.h d:\tools\mingw\include\dde.h \
+ d:\tools\mingw\include\ddeml.h d:\tools\mingw\include\dlgs.h \
+ d:\tools\mingw\include\imm.h d:\tools\mingw\include\lzexpand.h \
+ d:\tools\mingw\include\mmsystem.h d:\tools\mingw\include\nb30.h \
+ d:\tools\mingw\include\rpc.h d:\tools\mingw\include\rpcdce.h \
+ d:\tools\mingw\include\basetyps.h d:\tools\mingw\include\rpcdcep.h \
+ d:\tools\mingw\include\rpcnsi.h d:\tools\mingw\include\rpcnterr.h \
+ d:\tools\mingw\include\shellapi.h d:\tools\mingw\include\pshpack2.h \
+ d:\tools\mingw\include\winperf.h d:\tools\mingw\include\commdlg.h \
+ d:\tools\mingw\include\unknwn.h d:\tools\mingw\include\objfwd.h \
+ d:\tools\mingw\include\wtypes.h d:\tools\mingw\include\rpcndr.h \
+ d:\tools\mingw\include\rpcnsip.h d:\tools\mingw\include\prsht.h \
+ d:\tools\mingw\include\winspool.h d:\tools\mingw\include\winsock.h \
+ d:\tools\mingw\include\mswsock.h d:\tools\mingw\include\ole2.h \
+ d:\tools\mingw\include\objbase.h d:\tools\mingw\include\objidl.h \
+ d:\tools\mingw\include\cguid.h d:\tools\mingw\include\olectlid.h \
+ d:\tools\mingw\include\oleauto.h d:\tools\mingw\include\oaidl.h \
+ d:\tools\mingw\include\oleidl.h ../elfgcchack.h
+xmlsave.o: ../xmlsave.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/xmlsave.h \
+ ../include/libxml/HTMLtree.h ../buf.h ../enc.h ../save.h ../elfgcchack.h
+xmlschemas.o: ../xmlschemas.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/uri.h \
+ ../include/libxml/xmlschemas.h ../include/libxml/schemasInternals.h \
+ ../include/libxml/xmlschemastypes.h ../include/libxml/pattern.h \
+ ../include/libxml/xmlreader.h ../include/libxml/relaxng.h \
+ ../elfgcchack.h
+xmlschemastypes.o: ../xmlschemastypes.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/xpath.h \
+ ../include/libxml/uri.h ../include/libxml/xmlschemas.h \
+ ../include/libxml/schemasInternals.h ../include/libxml/xmlschemastypes.h \
+ ../elfgcchack.h
+xmlunicode.o: ../xmlunicode.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlunicode.h ../include/libxml/chvalid.h \
+ ../include/libxml/xmlstring.h ../elfgcchack.h
+xmlwriter.o: ../xmlwriter.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/tree.h d:\tools\mingw\include\limits.h \
+ ../include/libxml/xmlstring.h ../include/libxml/xmlregexp.h \
+ ../include/libxml/dict.h ../include/libxml/hash.h \
+ ../include/libxml/valid.h ../include/libxml/xmlerror.h \
+ ../include/libxml/list.h ../include/libxml/xmlautomata.h \
+ ../include/libxml/entities.h ../include/libxml/encoding.h \
+ d:\tools\mingw\include\iconv.h d:\tools\mingw\include\errno.h \
+ d:\tools\mingw\include\wchar.h d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/uri.h ../include/libxml/HTMLtree.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/xmlwriter.h ../buf.h \
+ ../enc.h ../save.h ../elfgcchack.h
+xpath.o: ../xpath.c ../libxml.h ../config.h d:\tools\mingw\include\io.h \
+ d:\tools\mingw\include\_mingw.h d:\tools\mingw\include\sdkddkver.h \
+ d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\ctype.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/xpath.h ../include/libxml/xpathInternals.h \
+ ../include/libxml/parserInternals.h ../include/libxml/HTMLparser.h \
+ ../include/libxml/chvalid.h ../include/libxml/xpointer.h \
+ ../include/libxml/debugXML.h ../include/libxml/pattern.h ../buf.h \
+ ../timsort.h ../trionan.c ../triodef.h ../trionan.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\float.h \
+ d:\tools\mingw\include\assert.h ../elfgcchack.h
+xpointer.o: ../xpointer.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ ../include/libxml/xpointer.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/xmlmemory.h ../include/libxml/threads.h \
+ ../include/libxml/globals.h ../include/libxml/parser.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h d:\tools\mingw\include\stdlib.h \
+ ../include/libxml/xlink.h ../include/libxml/SAX2.h \
+ ../include/libxml/xpath.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../include/libxml/uri.h ../include/libxml/xpathInternals.h \
+ ../elfgcchack.h
+xmlstring.o: ../xmlstring.c ../libxml.h ../config.h \
+ d:\tools\mingw\include\io.h d:\tools\mingw\include\_mingw.h \
+ d:\tools\mingw\include\sdkddkver.h d:\tools\mingw\include\sys\types.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stddef.h \
+ d:\tools\mingw\include\string.h d:\tools\mingw\include\direct.h \
+ ../include/libxml/xmlversion.h ../include/libxml/xmlexports.h \
+ d:\tools\mingw\include\math.h d:\tools\mingw\include\stdio.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdarg.h \
+ d:\tools\mingw\include\stdlib.h ../include/libxml/xmlmemory.h \
+ ../include/libxml/threads.h ../include/libxml/globals.h \
+ ../include/libxml/parser.h ../include/libxml/tree.h \
+ d:\tools\mingw\include\limits.h ../include/libxml/xmlstring.h \
+ ../include/libxml/xmlregexp.h ../include/libxml/dict.h \
+ ../include/libxml/hash.h ../include/libxml/valid.h \
+ ../include/libxml/xmlerror.h ../include/libxml/list.h \
+ ../include/libxml/xmlautomata.h ../include/libxml/entities.h \
+ ../include/libxml/encoding.h d:\tools\mingw\include\iconv.h \
+ d:\tools\mingw\include\errno.h d:\tools\mingw\include\wchar.h \
+ d:\tools\mingw\include\wctype.h \
+ d:\tools\mingw\lib\gcc\mingw32\4.8.1\include\stdint.h \
+ d:\tools\mingw\include\stdint.h ../include/libxml/xmlIO.h \
+ ../include/libxml/SAX.h ../include/libxml/xlink.h \
+ ../include/libxml/SAX2.h ../include/libxml/parserInternals.h \
+ ../include/libxml/HTMLparser.h ../include/libxml/chvalid.h \
+ ../elfgcchack.h

@@ -1,0 +1,353 @@
+﻿生成启动时间为 2014/4/19 15:00:46。
+     1>项目“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\runsuite.vcxproj”在节点 3 上(build 个目标)。
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project '..\..\..\libiconv-1.14.vc10\windows\VC10\iconv.vcxproj' does not exist.
+     1>InitializeBuildStatus:
+         正在创建“build\runsuiteDebug\runsuite.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\ /ID:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\include /I"D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\..\libiconv-1.14.vc10\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"build\runsuiteDebug\\" /Fd"build\runsuiteDebug\vc100.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt ..\..\runsuite.c /MP 
+         runsuite.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.exe" /NOLOGO /LIBPATH:D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib Ws2_32.lib libiconv.a libgcc.a kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"build\runsuiteDebug\runsuite.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\runsuite.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.lib" /MACHINE:X86 build\runsuiteDebug\runsuite.obj
+         D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libxml2.lib
+         LINK : 没有找到 D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.exe 或上一个增量链接没有生成它；正在执行完全链接
+            正在创建库 D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.lib 和对象 D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.exp
+     1>runsuite.obj : warning LNK4049: 已导入本地定义的符号 _xmlFree
+     1>LIBCMTD.lib(_fptostr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_fptostr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(atox.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(atox.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wchtodig.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wchtodig.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(xtoas.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(xtoas.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(xtows.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(xtows.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dosmap.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dosmap.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(drive.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(drive.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fullpath.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fullpath.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(getcwd.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(getcwd.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(stat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(stat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(stati32.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(stati32.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wfullpat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wfullpat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wgetcwd.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wgetcwd.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wstat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wstat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wstati32.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wstati32.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(expand.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(expand.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(free.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(free.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(heapchk.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(heapchk.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(heapinit.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(heapinit.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(malloc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(malloc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(realloc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(realloc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_newmode.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_newmode.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(chsize.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(chsize.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(close.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(close.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(commit.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(commit.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fstat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fstat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fstati32.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fstati32.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(initcon.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(initcon.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(ioinit.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(ioinit.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(isatty.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(isatty.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(lseek.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(lseek.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(lseeki64.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(lseeki64.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(open.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(open.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(osfinfo.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(osfinfo.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(read.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(read.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(setmode.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(setmode.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(txtmode.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(txtmode.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(write.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(write.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(putwch.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(putwch.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wopen.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wopen.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(secchk.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(secchk.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(a_env.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(a_env.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(abort.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(abort.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crtmbox.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crtmbox.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crtmboxw.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crtmboxw.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(ctype.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(ctype.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbghook.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbghook.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgrpt.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgrpt.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgrptt.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgrptt.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(errmode.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(errmode.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(getenv.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(getenv.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(getqloc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(getqloc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(glstatus.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(glstatus.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(gs_cookie.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(gs_cookie.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(gs_report.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(gs_report.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(gs_support.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(gs_support.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(initcoll.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(initcoll.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(initctyp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(initctyp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(inithelp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(inithelp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(initmon.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(initmon.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(initnum.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(initnum.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(inittime.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(inittime.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(labs.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(labs.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(lconv.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(lconv.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(localref.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(localref.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(onexit.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(onexit.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(nlsdata1.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(nlsdata1.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(nlsdata2.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(nlsdata2.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(pesect.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(pesect.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(purevirt.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(purevirt.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(qsort.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(qsort.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(rand_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(rand_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(setenv.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(setenv.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(setlocal.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(setlocal.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(winsig.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(winsig.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(winxfltr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(winxfltr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wmakepath_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wmakepath_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wsplitpath_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wsplitpath_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wtombenv.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wtombenv.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(cmiscdat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(cmiscdat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(feoferr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(feoferr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fileno.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fileno.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fputc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fputc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fputwc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fputwc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_filbuf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_filbuf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_file.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_file.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_flsbuf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_flsbuf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_flswbuf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_flswbuf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_freebuf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_freebuf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_getbuf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_getbuf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_open.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_open.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_sftbuf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_sftbuf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(closeall.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(closeall.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fclose.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fclose.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fflush.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fflush.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fopen.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fopen.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fread.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fread.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fwrite.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fwrite.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(outputformat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(outputformat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(printf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(printf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(snprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(snprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(sprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(sprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(sscanf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(sscanf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(stream.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(stream.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(swprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(swprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(ungetc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(ungetc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vfprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vfprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vsprintf.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vsprintf.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vsnprint.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vsnprint.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vsnprnc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vsnprnc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vswprint.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vswprint.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(vswprnc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(vswprnc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wfopen.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wfopen.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_wopen.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_wopen.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(ncommode.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(ncommode.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(memcpy_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(memcpy_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strncmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strncmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strlen_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strlen_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strcat_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strcat_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strcpy_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strcpy_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strncpy_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strncpy_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcscat_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcscat_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcscpy_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcscpy_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcslen.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcslen.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcslen_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcslen_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcsncmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcsncmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcsncpy_s.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcsncpy_s.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcspbrk.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcspbrk.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcsrchr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcsrchr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(days.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(days.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dtoxtime.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dtoxtime.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(timeset.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(timeset.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(tzset.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(tzset.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dtoxtm64.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dtoxtm64.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(handler.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(handler.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgdel.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgdel.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_ctype.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_ctype.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(_wctype.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(_wctype.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(atodbl.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(atodbl.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(iswctype.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(iswctype.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(isctype.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(isctype.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbstowcs.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbstowcs.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbtowc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbtowc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strtol.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strtol.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strtoq.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strtoq.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(tolower.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(tolower.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(toupper.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(toupper.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(towlower.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(towlower.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcstol.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcstol.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcstombs.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcstombs.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wctomb.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wctomb.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(ismbbyte.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(ismbbyte.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbctype.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbctype.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbschr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbschr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbsicmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbsicmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbsnbcmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbsnbcmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbsnbicm.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbsnbicm.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbsnbico.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbsnbico.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbspbrk.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbspbrk.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbsrchr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbsrchr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mbtolwr.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mbtolwr.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(a_cmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(a_cmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(a_loc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(a_loc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(a_map.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(a_map.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(a_str.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(a_str.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgcalloc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgcalloc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgfree.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgfree.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgheap.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgheap.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgmalloc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgmalloc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgrealloc.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgrealloc.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(dbgrptw.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(dbgrptw.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(invarg.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(invarg.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(w_map.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(w_map.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(input.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(input.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(inputs.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(inputs.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(output.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(output.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(outputp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(outputp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(outputs.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(outputs.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(woutput.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(woutput.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(woutputp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(woutputp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(woutputs.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(woutputs.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(stricmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(stricmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strnicmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strnicmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(strnicol.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(strnicol.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcsicmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcsicmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(wcsnicmp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(wcsnicmp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(tidtable.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(tidtable.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(thread.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(thread.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(stdenvp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(stdenvp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(stdargv.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(stdargv.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(mlock.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(mlock.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crt0msg.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crt0msg.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crt0init.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crt0fp.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crt0fp.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crt0dat.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crt0dat.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(crt0.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(crt0.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>LIBCMTD.lib(fp8.obj) : warning LNK4099: 未找到 PDB“libcmtd.pdb”(使用“LIBCMTD.lib(fp8.obj)”或在“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\lib\libcmtd.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         runsuite.vcxproj -> D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\..\..\lib\runsuite.exe;#1" /manifest build\runsuiteDebug\runsuite.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“build\runsuiteDebug\runsuite.unsuccessfulbuild”。
+         正在对“build\runsuiteDebug\runsuite.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\runsuite.vcxproj”(build 个目标)的操作。
+
+项目性能摘要:
+        3 毫秒  D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\libxml2.vcxproj   4 次调用
+                  1 毫秒  GetTargetPath                              1 次调用
+                  1 毫秒  GetNativeManifest                          1 次调用
+                  1 毫秒  GetResolvedLinkLibs                        1 次调用
+                  0 毫秒  GetCopyToOutputDirectoryItems              1 次调用
+     1181 毫秒  D:\Project\GPL\libxml\libxml2\libxml2\libxml2\win32\VC10\runsuite.vcxproj   1 次调用
+               1181 毫秒  build                                      1 次调用
+
+目标性能摘要:
+        0 毫秒  _Midl                                      1 次调用
+        0 毫秒  _ALink                                     1 次调用
+        0 毫秒  SelectCustomBuild                          1 次调用
+        0 毫秒  GetReferenceAssemblyPaths                  1 次调用
+        0 毫秒  _ClCompile                                 1 次调用
+        0 毫秒  _CheckForCompileOutputs                    1 次调用
+        0 毫秒  SelectClCompile                            1 次调用
+        0 毫秒  _RemoveNameMetadataFromProjectReferenceItems   1 次调用
+        0 毫秒  _PrepareForBuild                           1 次调用
+        0 毫秒  GetResolvedLinkLibs                        1 次调用
+        0 毫秒  MakeDirsForManifest                        1 次调用
+        0 毫秒  ComputeCLCompileGeneratedXDCFiles          1 次调用
+        0 毫秒  AfterMidl                                  1 次调用
+        0 毫秒  PreLinkEvent                               1 次调用
+        0 毫秒  _XdcMake                                   1 次调用
+        0 毫秒  _Deploy                                    1 次调用
+        0 毫秒  _Manifest                                  1 次调用
+        0 毫秒  CreateCustomManifestResourceNames          1 次调用
+        0 毫秒  PrepareResourceNames                       1 次调用
+        0 毫秒  BeforeResourceCompile                      1 次调用
+        0 毫秒  ComputeMIDLGeneratedCompileInputs          1 次调用
+        0 毫秒  ComputeReferenceLinkInputs                 1 次调用
+        0 毫秒  _Xsd                                       1 次调用
+        0 毫秒  ComputeResolveLinkObj                      1 次调用
+        0 毫秒  ComputeCLCompileGeneratedSbrFiles          1 次调用
+        0 毫秒  ComputeRCOutputs                           1 次调用
+        0 毫秒  ComputeCLInputPDBName                      1 次调用
+        0 毫秒  GetTargetPath                              1 次调用
+        0 毫秒  _DetermineManagedStateFromCL               1 次调用
+        0 毫秒  GetFrameworkPaths                          1 次调用
+        0 毫秒  ComputeLinkImportLibraryOutputsForClean    1 次调用
+        0 毫秒  MakeDirsForResourceCompile                 1 次调用
+        0 毫秒  ResolvedXDCMake                            1 次调用
+        0 毫秒  CopyFilesToOutputDirectory                 1 次调用
+        0 毫秒  AfterClCompile                             1 次调用
+        0 毫秒  ResolveReferences                          1 次调用
+        0 毫秒  ComputeCLOutputs                           1 次调用
+        0 毫秒  ComputeLinkInputsFromProject               1 次调用
+        0 毫秒  _ResourceCompile                           1 次调用
+        0 毫秒  BuildLinkTraverse                          1 次调用
+        0 毫秒  PostBuildEvent                             1 次调用
+        0 毫秒  ComputeManifestInputsTargets               1 次调用
+        0 毫秒  MakeDirsForBscMake                         1 次调用
+        0 毫秒  AfterResolveReferences                     1 次调用
+        0 毫秒  ComputeManifestGeneratedLinkerInputs       1 次调用
+        0 毫秒  BeforeResolveReferences                    1 次调用
+        0 毫秒  RegisterOutput                             1 次调用
+        0 毫秒  AfterBuildGenerateSourcesEvent             1 次调用
+        0 毫秒  BuildGenerateSources                       1 次调用
+        0 毫秒  _SelectedFiles                             1 次调用
+        0 毫秒  AfterBuild                                 1 次调用
+        0 毫秒  AfterBuildGenerateSources                  1 次调用
+        0 毫秒  _Link                                      1 次调用
+        0 毫秒  _Appverifier                               1 次调用
+        0 毫秒  Build                                      1 次调用
+        0 毫秒  MakeDirsForMidl                            1 次调用
+        0 毫秒  _BscMake                                   1 次调用
+        0 毫秒  AfterResourceCompile                       1 次调用
+        0 毫秒  BuildCompileTraverse                       1 次调用
+        0 毫秒  PlatformPrepareForBuild                    1 次调用
+        0 毫秒  _GenerateWebServiceProxy                   1 次调用
+        0 毫秒  BuildCompile                               1 次调用
+        0 毫秒  _GenerateXMLData                           1 次调用
+        0 毫秒  BuildLink                                  1 次调用
+        0 毫秒  BeforeLink                                 1 次调用
+        0 毫秒  AfterBuildCompileEvent                     1 次调用
+        0 毫秒  MakeDirsForXdcMake                         1 次调用
+        0 毫秒  BeforeBuildGenerateSources                 1 次调用
+        0 毫秒  BeforeClCompile                            1 次调用
+        0 毫秒  BuildGenerateSourcesTraverse               1 次调用
+        0 毫秒  _CopySourceItemsToOutputDirectory          1 次调用
+        0 毫秒  CreateSatelliteAssemblies                  1 次调用
+        0 毫秒  ComputeRCGeneratedLinkInputs               1 次调用
+        1 毫秒  PrepareForBuild                            1 次调用
+        1 毫秒  _GenerateSatelliteAssemblyInputs           1 次调用
+        1 毫秒  MakeDirsForLink                            1 次调用
+        1 毫秒  _SplitProjectReferencesByFileExistence     1 次调用
+        1 毫秒  AssignTargetPaths                          1 次调用
+        1 毫秒  ComputeReferenceCLInput                    1 次调用
+        1 毫秒  AfterLink                                  1 次调用
+        1 毫秒  PreBuildEvent                              1 次调用
+        1 毫秒  MakeDirsForCl                              1 次调用
+        1 毫秒  DoLinkOutputFilesMatch                     1 次调用
+        1 毫秒  ComputeCLGeneratedLinkInputs               1 次调用
+        1 毫秒  _DetermineManagedStateForLink              1 次调用
+        1 毫秒  AssignProjectConfiguration                 1 次调用
+        1 毫秒  FinalizeBuildStatus                        1 次调用
+        1 毫秒  GetNativeManifest                          1 次调用
+        1 毫秒  SplitResourcesByCulture                    1 次调用
+        3 毫秒  ComputeCustomBuildOutput                   1 次调用
+        3 毫秒  InitializeBuildStatus                      1 次调用
+        4 毫秒  SetBuildDefaultEnvironmentVariables        1 次调用
+        5 毫秒  _CheckForInvalidConfigurationAndPlatform   1 次调用
+        6 毫秒  GetCopyToOutputDirectoryItems              1 次调用
+        7 毫秒  ResolvedLinkLib                            1 次调用
+        7 毫秒  ResolveProjectReferences                   1 次调用
+       92 毫秒  Manifest                                   1 次调用
+      276 毫秒  ClCompile                                  1 次调用
+      758 毫秒  Link                                       1 次调用
+
+任务性能摘要:
+        0 毫秒  Delete                                     1 次调用
+        0 毫秒  Warning                                    1 次调用
+        0 毫秒  AssignCulture                              1 次调用
+        1 毫秒  WriteLinesToFile                           3 次调用
+        1 毫秒  ResolveNonMSBuildProjectOutput             1 次调用
+        1 毫秒  AssignTargetPath                           5 次调用
+        1 毫秒  AssignProjectConfiguration                 1 次调用
+        1 毫秒  ReadLinesFromFile                          1 次调用
+        1 毫秒  MakeDir                                   10 次调用
+        1 毫秒  Message                                    3 次调用
+        2 毫秒  Touch                                      2 次调用
+        3 毫秒  SetEnv                                     4 次调用
+       17 毫秒  MSBuild                                    4 次调用
+       92 毫秒  Mt                                         1 次调用
+      275 毫秒  CL                                         1 次调用
+      757 毫秒  Link                                       1 次调用
+
+生成成功。
+
+已用时间 00:00:01.18

@@ -1,0 +1,91 @@
+﻿生成启动时间为 2014/4/8 0:19:47。
+     1>项目“D:\Project\myself\shark\shark\third_party\lib_plist\libplist.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\libplist.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D __STDC_FORMAT_MACROS /D _UNICODE /D UNICODE /D plist_STATIC /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\Array.cpp src\Boolean.cpp src\Data.cpp src\Date.cpp src\Dictionary.cpp src\Integer.cpp src\Key.cpp src\Node.cpp src\Real.cpp src\String.cpp src\Structure.cpp src\bplist.c src\plist.c src\xplist.c
+         xplist.c
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\xplist.c(35): fatal error C1083: 无法打开包括文件:“node.h”: No such file or directory
+         plist.c
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\plist.h(25): fatal error C1083: 无法打开包括文件:“plist/plist.h”: No such file or directory
+         bplist.c
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\bplist.c(30): fatal error C1083: 无法打开包括文件:“plist/plist.h”: No such file or directory
+         Structure.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\structure.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Structure.h”: No such file or directory
+         String.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\string.cpp(22): fatal error C1083: 无法打开包括文件:“plist/String.h”: No such file or directory
+         Real.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\real.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Real.h”: No such file or directory
+         Node.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\node.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Node.h”: No such file or directory
+         Key.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\key.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Key.h”: No such file or directory
+         Integer.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\integer.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Integer.h”: No such file or directory
+         Dictionary.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\dictionary.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Dictionary.h”: No such file or directory
+         Date.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\date.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Date.h”: No such file or directory
+         Data.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\data.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Data.h”: No such file or directory
+         Boolean.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\boolean.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Boolean.h”: No such file or directory
+         Array.cpp
+     1>d:\project\myself\shark\shark\third_party\lib_plist\src\array.cpp(22): fatal error C1083: 无法打开包括文件:“plist/Array.h”: No such file or directory
+         正在生成代码...
+     1>已完成生成项目“D:\Project\myself\shark\shark\third_party\lib_plist\libplist.vcxproj”(build 个目标)的操作 - 失败。
+
+项目性能摘要:
+      968 毫秒  D:\Project\myself\shark\shark\third_party\lib_plist\libplist.vcxproj   1 次调用
+                968 毫秒  build                                      1 次调用
+
+目标性能摘要:
+        0 毫秒  ComputeCLInputPDBName                      1 次调用
+        0 毫秒  _PrepareForBuild                           1 次调用
+        0 毫秒  _GenerateXMLData                           1 次调用
+        0 毫秒  ResolveReferences                          1 次调用
+        0 毫秒  BuildGenerateSources                       1 次调用
+        0 毫秒  ComputeReferenceCLInput                    1 次调用
+        0 毫秒  _Xsd                                       1 次调用
+        0 毫秒  _SelectedFiles                             1 次调用
+        0 毫秒  AfterBuildGenerateSourcesEvent             1 次调用
+        0 毫秒  AfterResolveReferences                     1 次调用
+        0 毫秒  PlatformPrepareForBuild                    1 次调用
+        0 毫秒  _GenerateWebServiceProxy                   1 次调用
+        0 毫秒  MakeDirsForMidl                            1 次调用
+        0 毫秒  GetFrameworkPaths                          1 次调用
+        0 毫秒  BuildCompileTraverse                       1 次调用
+        0 毫秒  PreBuildEvent                              1 次调用
+        0 毫秒  _Midl                                      1 次调用
+        0 毫秒  BeforeClCompile                            1 次调用
+        0 毫秒  _DetermineManagedStateFromCL               1 次调用
+        0 毫秒  BeforeBuildGenerateSources                 1 次调用
+        0 毫秒  AfterBuildGenerateSources                  1 次调用
+        0 毫秒  ComputeMIDLGeneratedCompileInputs          1 次调用
+        0 毫秒  GetReferenceAssemblyPaths                  1 次调用
+        0 毫秒  AfterMidl                                  1 次调用
+        0 毫秒  SelectCustomBuild                          1 次调用
+        0 毫秒  _SplitProjectReferencesByFileExistence     1 次调用
+        0 毫秒  BeforeResolveReferences                    1 次调用
+        1 毫秒  PrepareForBuild                            1 次调用
+        1 毫秒  MakeDirsForCl                              1 次调用
+        1 毫秒  BuildGenerateSourcesTraverse               1 次调用
+        1 毫秒  ResolveProjectReferences                   1 次调用
+        1 毫秒  SelectClCompile                            1 次调用
+        2 毫秒  InitializeBuildStatus                      1 次调用
+        4 毫秒  SetBuildDefaultEnvironmentVariables        1 次调用
+        6 毫秒  _CheckForInvalidConfigurationAndPlatform   1 次调用
+      950 毫秒  ClCompile                                  1 次调用
+
+任务性能摘要:
+        0 毫秒  Message                                    2 次调用
+        0 毫秒  MakeDir                                    4 次调用
+        0 毫秒  ReadLinesFromFile                          1 次调用
+        0 毫秒  Touch                                      1 次调用
+        1 毫秒  WriteLinesToFile                           1 次调用
+        4 毫秒  SetEnv                                     4 次调用
+      945 毫秒  CL                                         1 次调用
+
+生成失败。
+
+已用时间 00:00:00.96
