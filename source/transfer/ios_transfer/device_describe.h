@@ -1,7 +1,6 @@
 ﻿#ifndef _DEVICE_DESCRIBE_H_
 #define _DEVICE_DESCRIBE_H_
 
-#include <vector>
 #include <string>
 
 #include "third_party/chromium/base/basictypes.h"
@@ -39,7 +38,7 @@ protected:
                                                   int* count) override;
     virtual HRESULT __stdcall GetApplicationIDs(
         ios_transfer::DeviceID id, 
-        std::vector<std::wstring>* applicationIDs) override;
+        ios_transfer::IStringListEnumerator** applicationIDs) override;
     virtual HRESULT __stdcall GetApplicationInfo(
         ios_transfer::DeviceID id, const std::wstring& applicationID,
         ios_transfer::IApplicationInfo** applicationInfo) override;

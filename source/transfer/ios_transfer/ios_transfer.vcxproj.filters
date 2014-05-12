@@ -13,6 +13,7 @@
     <ClCompile Include="file_transfer.cpp" />
     <ClCompile Include="ios_service_names.cpp" />
     <ClCompile Include="ios_connector_provider.cpp" />
+    <ClCompile Include="string_list_enumerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="export.def" />
@@ -30,5 +31,7 @@
     <ClInclude Include="file_transfer.h" />
     <ClInclude Include="ios_service_names.h" />
     <ClInclude Include="ios_connector_provider.h" />
+    <ClInclude Include="value_enumerator.h" />
+    <ClInclude Include="string_list_enumerator.h" />
   </ItemGroup>
 </Project>

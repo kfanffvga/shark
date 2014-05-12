@@ -22,6 +22,7 @@
     <ClCompile Include="initialzed_configure.cpp" />
     <ClCompile Include="ios_connector_provider.cpp" />
     <ClCompile Include="ios_service_names.cpp" />
+    <ClCompile Include="string_list_enumerator.cpp" />
     <ClCompile Include="unknown.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +79,9 @@
     <ClInclude Include="ios_connector_provider.h" />
     <ClInclude Include="ios_interface.h" />
     <ClInclude Include="ios_service_names.h" />
+    <ClInclude Include="string_list_enumerator.h" />
     <ClInclude Include="unknown.h" />
+    <ClInclude Include="value_enumerator.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{001D1BD0-6795-471A-931D-EC32265F43D0}</ProjectGuid>

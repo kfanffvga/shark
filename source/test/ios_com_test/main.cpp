@@ -17,6 +17,7 @@ using ios_transfer::IDeviceNotifition;
 using ios_transfer::IDeviceDescribe;
 using ios_transfer::IInitialzedConfigure;
 using ios_transfer::DeviceID;
+using ios_transfer::IStringListEnumerator;
 
 class DeviceNotifyReceiver : public Unknown
                            , public IDeviceNotifition
@@ -112,8 +113,17 @@ int main(int argc, wchar_t* argv[])
             v->QueryInterface(ios_transfer::IID_DeviceDescribe, 
                               reinterpret_cast<void**>(&deviceDesc));
 
-            vector<wstring> appIDs;
-            deviceDesc->GetApplicationIDs(id, &appIDs);
+            IStringListEnumerator* enumerator = nullptr;
+            deviceDesc->GetApplicationIDs(id, &enumerator);
+            wchar_t* c = nullptr;
+            enumerator->BeginEnum();
+            while (enumerator->Next(&c) == S_OK)
+            {
+                CoTaskMemFree(c);
+                c = nullptr;
+            }
+
+            enumerator->Release();
             int count = 0;
             deviceDesc->GetApplicationCount(id, &count);
             deviceDesc->Release();

@@ -39,6 +39,7 @@ static const HRESULT E_FILE_NOT_FOUND = 0x52013002L;
 static const HRESULT E_APPLICATION_NOT_FOUND = 0x52013003L;
 static const HRESULT E_TRANSFER_ID_NOT_FOUND = 0x52013004L;
 static const HRESULT E_APPLICATION_DOCUMENT_FOLDER_NOT_FOUND = 0x52013005L;
+static const HRESULT E_ENUMERATOR_POINTER_IS_CONTAMINATED  = 0x52013006L;
 
 // 此处是接口的guid定义，接口的guid名称一律用IID接口名称或者CLSID接口名称来命名
 
@@ -75,7 +76,7 @@ static const GUID IID_ITransferProgressNotifition =
 
 // 此处是接口的具体定义，其中某些接口要外部程序实现,
 // 内部提供的接口，除了单纯为了得到数据的接口之外，全部以异步实现
-// 所有的字符返回都要由调用者自行释放
+// 所有的字符返回都要由调用者使用CoTaskMemFree自行释放
 
 // 字符串列表的枚举器 
 class IStringListEnumerator : public IUnknown
@@ -182,7 +183,7 @@ public:
         DeviceID id, std::wstring* uniqueDefineID) = 0;
     virtual HRESULT __stdcall GetApplicationCount(DeviceID id, int* count) = 0;
     virtual HRESULT __stdcall GetApplicationIDs(
-        DeviceID id, std::vector<std::wstring>* applicationIDs) = 0;
+        DeviceID id, IStringListEnumerator** applicationIDs) = 0;
     virtual HRESULT __stdcall GetApplicationInfo(
         DeviceID id, const std::wstring& applicationID,
         IApplicationInfo** applicationInfo) = 0;

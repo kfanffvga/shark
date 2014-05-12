@@ -10,6 +10,7 @@
 #include "source/transfer/ios_transfer/device_manager.h"
 #include "source/transfer/ios_transfer/class_provider.h"
 #include "source/transfer/ios_transfer/application_describe.h"
+#include "source/transfer/ios_transfer/string_list_enumerator.h"
 
 using std::wstring;
 using std::vector;
@@ -23,6 +24,7 @@ using base::AutoLock;
 using ios_transfer::DeviceID;
 using ios_transfer::IApplicationInfo;
 using ios_transfer::ITunesCommonFolderType;
+using ios_transfer::IStringListEnumerator;
 
 DeviceDescribe::DeviceDescribe()
     : Unknown()
@@ -133,10 +135,10 @@ HRESULT DeviceDescribe::GetApplicationCount(DeviceID id, int* count)
     return S_OK;
 }
 
-HRESULT DeviceDescribe::GetApplicationIDs(DeviceID id, 
-                                          vector<wstring>* applicationIDs)
+HRESULT DeviceDescribe::GetApplicationIDs(
+    DeviceID id, IStringListEnumerator** applicationIDs)
 {
-    if (!applicationIDs)
+    if (*applicationIDs)
         return E_POINTER;
 
     auto deviceInfo = DeviceManager::GetInstance()->GetDeviceInfoByDeviceID(id);
@@ -145,12 +147,15 @@ HRESULT DeviceDescribe::GetApplicationIDs(DeviceID id,
     
     {
         AutoLock l(*lock_);
-        auto procedure = [applicationIDs] (const SingleApplicationInfo& app)
+        StringListEnumerator* enumerator = new StringListEnumerator();
+        auto procedure = [enumerator] (const SingleApplicationInfo& app)
         {
-            applicationIDs->push_back(SysUTF8ToWide(app.ID));
+            enumerator->AddElement(SysUTF8ToWide(app.ID));
         };
         for_each(deviceInfo->applicationInfos.begin(), 
-            deviceInfo->applicationInfos.end(), procedure);
+                 deviceInfo->applicationInfos.end(), procedure);
+        enumerator->AddRef();
+        *applicationIDs = enumerator;
     }
     return S_OK;
 }
