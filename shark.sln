@@ -1,8 +1,446 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third_party", "third_party", "{106CCB0F-0C63-41D8-8A82-A40B8534F0F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chromium", "chromium", "{26E6D473-D7F8-4F14-A7CB-B5B37DADABF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "base", "base", "{EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third_party", "third_party", "{59CE1321-32F0-4F43-BECB-84C21B4BFC8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dynamic_annotations", "dynamic_annotations", "{232F1275-7328-4F8D-BFF3-5034297E2DD3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamic_annotations", "third_party\chromium\base\third_party\dynamic_annotations\dynamic_annotations.vcxproj", "{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base", "third_party\chromium\base\base.vcxproj", "{ED99D404-F6B3-517A-4EA7-604A10269355}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{74F3B875-0C3C-4583-B684-7A2A520F841F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "media", "media", "{7D3AB9D5-D308-47CB-80C9-B0DBC3176FA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "transfer", "transfer", "{F520FC6E-9665-4EB7-8C66-CF4D6D713385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ios_transfer", "ios_transfer", "{CD08B130-8155-46F2-9A6A-1DD58F2C4840}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ios_transfer", "source\transfer\ios_transfer\ios_transfer.vcxproj", "{001D1BD0-6795-471A-931D-EC32265F43D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_ios_mobile_device", "lib_ios_mobile_device", "{F04F80BC-D064-432B-88AC-49124C2A59CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libimobiledevice", "third_party\lib_ios_mobile_device\libimobiledevice.vcxproj", "{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_plist", "lib_plist", "{42CEF750-EDA9-4347-96A5-111DBA5AE3CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libplist", "third_party\lib_plist\libplist.vcxproj", "{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "open_ssl", "open_ssl", "{EA608B53-34D7-4120-9EC1-4DBDA55BEF2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{13C99B27-B0C8-4A6F-923C-A1CAF40BD2F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "openssl", "openssl", "{EB5F5B05-A1BE-4384-A549-C482740F152D}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\open_ssl\include\openssl\aes.h = third_party\open_ssl\include\openssl\aes.h
+		third_party\open_ssl\include\openssl\asn1.h = third_party\open_ssl\include\openssl\asn1.h
+		third_party\open_ssl\include\openssl\asn1_mac.h = third_party\open_ssl\include\openssl\asn1_mac.h
+		third_party\open_ssl\include\openssl\asn1t.h = third_party\open_ssl\include\openssl\asn1t.h
+		third_party\open_ssl\include\openssl\bio.h = third_party\open_ssl\include\openssl\bio.h
+		third_party\open_ssl\include\openssl\blowfish.h = third_party\open_ssl\include\openssl\blowfish.h
+		third_party\open_ssl\include\openssl\bn.h = third_party\open_ssl\include\openssl\bn.h
+		third_party\open_ssl\include\openssl\buffer.h = third_party\open_ssl\include\openssl\buffer.h
+		third_party\open_ssl\include\openssl\cast.h = third_party\open_ssl\include\openssl\cast.h
+		third_party\open_ssl\include\openssl\comp.h = third_party\open_ssl\include\openssl\comp.h
+		third_party\open_ssl\include\openssl\conf.h = third_party\open_ssl\include\openssl\conf.h
+		third_party\open_ssl\include\openssl\conf_api.h = third_party\open_ssl\include\openssl\conf_api.h
+		third_party\open_ssl\include\openssl\crypto.h = third_party\open_ssl\include\openssl\crypto.h
+		third_party\open_ssl\include\openssl\des.h = third_party\open_ssl\include\openssl\des.h
+		third_party\open_ssl\include\openssl\des_old.h = third_party\open_ssl\include\openssl\des_old.h
+		third_party\open_ssl\include\openssl\dh.h = third_party\open_ssl\include\openssl\dh.h
+		third_party\open_ssl\include\openssl\dsa.h = third_party\open_ssl\include\openssl\dsa.h
+		third_party\open_ssl\include\openssl\dso.h = third_party\open_ssl\include\openssl\dso.h
+		third_party\open_ssl\include\openssl\dtls1.h = third_party\open_ssl\include\openssl\dtls1.h
+		third_party\open_ssl\include\openssl\e_os2.h = third_party\open_ssl\include\openssl\e_os2.h
+		third_party\open_ssl\include\openssl\ebcdic.h = third_party\open_ssl\include\openssl\ebcdic.h
+		third_party\open_ssl\include\openssl\ec.h = third_party\open_ssl\include\openssl\ec.h
+		third_party\open_ssl\include\openssl\ecdh.h = third_party\open_ssl\include\openssl\ecdh.h
+		third_party\open_ssl\include\openssl\ecdsa.h = third_party\open_ssl\include\openssl\ecdsa.h
+		third_party\open_ssl\include\openssl\engine.h = third_party\open_ssl\include\openssl\engine.h
+		third_party\open_ssl\include\openssl\err.h = third_party\open_ssl\include\openssl\err.h
+		third_party\open_ssl\include\openssl\evp.h = third_party\open_ssl\include\openssl\evp.h
+		third_party\open_ssl\include\openssl\hmac.h = third_party\open_ssl\include\openssl\hmac.h
+		third_party\open_ssl\include\openssl\idea.h = third_party\open_ssl\include\openssl\idea.h
+		third_party\open_ssl\include\openssl\krb5_asn.h = third_party\open_ssl\include\openssl\krb5_asn.h
+		third_party\open_ssl\include\openssl\kssl.h = third_party\open_ssl\include\openssl\kssl.h
+		third_party\open_ssl\include\openssl\lhash.h = third_party\open_ssl\include\openssl\lhash.h
+		third_party\open_ssl\include\openssl\md2.h = third_party\open_ssl\include\openssl\md2.h
+		third_party\open_ssl\include\openssl\md4.h = third_party\open_ssl\include\openssl\md4.h
+		third_party\open_ssl\include\openssl\md5.h = third_party\open_ssl\include\openssl\md5.h
+		third_party\open_ssl\include\openssl\obj_mac.h = third_party\open_ssl\include\openssl\obj_mac.h
+		third_party\open_ssl\include\openssl\objects.h = third_party\open_ssl\include\openssl\objects.h
+		third_party\open_ssl\include\openssl\ocsp.h = third_party\open_ssl\include\openssl\ocsp.h
+		third_party\open_ssl\include\openssl\opensslconf.h = third_party\open_ssl\include\openssl\opensslconf.h
+		third_party\open_ssl\include\openssl\opensslv.h = third_party\open_ssl\include\openssl\opensslv.h
+		third_party\open_ssl\include\openssl\ossl_typ.h = third_party\open_ssl\include\openssl\ossl_typ.h
+		third_party\open_ssl\include\openssl\pem.h = third_party\open_ssl\include\openssl\pem.h
+		third_party\open_ssl\include\openssl\pem2.h = third_party\open_ssl\include\openssl\pem2.h
+		third_party\open_ssl\include\openssl\pkcs12.h = third_party\open_ssl\include\openssl\pkcs12.h
+		third_party\open_ssl\include\openssl\pkcs7.h = third_party\open_ssl\include\openssl\pkcs7.h
+		third_party\open_ssl\include\openssl\pq_compat.h = third_party\open_ssl\include\openssl\pq_compat.h
+		third_party\open_ssl\include\openssl\pqueue.h = third_party\open_ssl\include\openssl\pqueue.h
+		third_party\open_ssl\include\openssl\rand.h = third_party\open_ssl\include\openssl\rand.h
+		third_party\open_ssl\include\openssl\rc2.h = third_party\open_ssl\include\openssl\rc2.h
+		third_party\open_ssl\include\openssl\rc4.h = third_party\open_ssl\include\openssl\rc4.h
+		third_party\open_ssl\include\openssl\ripemd.h = third_party\open_ssl\include\openssl\ripemd.h
+		third_party\open_ssl\include\openssl\rsa.h = third_party\open_ssl\include\openssl\rsa.h
+		third_party\open_ssl\include\openssl\safestack.h = third_party\open_ssl\include\openssl\safestack.h
+		third_party\open_ssl\include\openssl\sha.h = third_party\open_ssl\include\openssl\sha.h
+		third_party\open_ssl\include\openssl\ssl.h = third_party\open_ssl\include\openssl\ssl.h
+		third_party\open_ssl\include\openssl\ssl2.h = third_party\open_ssl\include\openssl\ssl2.h
+		third_party\open_ssl\include\openssl\ssl23.h = third_party\open_ssl\include\openssl\ssl23.h
+		third_party\open_ssl\include\openssl\ssl3.h = third_party\open_ssl\include\openssl\ssl3.h
+		third_party\open_ssl\include\openssl\stack.h = third_party\open_ssl\include\openssl\stack.h
+		third_party\open_ssl\include\openssl\store.h = third_party\open_ssl\include\openssl\store.h
+		third_party\open_ssl\include\openssl\symhacks.h = third_party\open_ssl\include\openssl\symhacks.h
+		third_party\open_ssl\include\openssl\tls1.h = third_party\open_ssl\include\openssl\tls1.h
+		third_party\open_ssl\include\openssl\tmdiff.h = third_party\open_ssl\include\openssl\tmdiff.h
+		third_party\open_ssl\include\openssl\txt_db.h = third_party\open_ssl\include\openssl\txt_db.h
+		third_party\open_ssl\include\openssl\ui.h = third_party\open_ssl\include\openssl\ui.h
+		third_party\open_ssl\include\openssl\ui_compat.h = third_party\open_ssl\include\openssl\ui_compat.h
+		third_party\open_ssl\include\openssl\x509.h = third_party\open_ssl\include\openssl\x509.h
+		third_party\open_ssl\include\openssl\x509_vfy.h = third_party\open_ssl\include\openssl\x509_vfy.h
+		third_party\open_ssl\include\openssl\x509v3.h = third_party\open_ssl\include\openssl\x509v3.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{4DD8FA24-EAD7-4930-B89E-E7C99C1C5463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{A69806F0-C565-4046-9B7D-28B761DFE848}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\common\dirent.h = third_party\common\dirent.h
+		third_party\common\inttypes.h = third_party\common\inttypes.h
+		third_party\common\stdint.h = third_party\common\stdint.h
+		third_party\common\unistd.h = third_party\common\unistd.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_gen", "lib_gen", "{3F8E5D5B-91AF-4E72-A15F-66A0C75A7441}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgen", "third_party\lib_gen\libgen.vcxproj", "{3E2B717A-7A6F-4FF5-9025-738968045272}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "get_opt", "get_opt", "{087614DC-83D7-40A7-9AAC-1C5737B5F93F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "getopt", "third_party\get_opt\getopt.vcxproj", "{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_xml", "lib_xml", "{8E742279-EF8F-49F0-9A0C-A921CD70749D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iconv", "iconv", "{96A6E9F4-6F4A-460A-96F7-E3D3C7D05F85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{982030DB-BF3E-4313-8BAE-779F2C93AB2B}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\iconv\include\iconv.h = third_party\iconv\include\iconv.h
+		third_party\iconv\include\libcharset.h = third_party\iconv\include\libcharset.h
+		third_party\iconv\include\localcharset.h = third_party\iconv\include\localcharset.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{EA85F34A-78DA-4954-BAB1-71F1F757D158}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\iconv\lib\charset.alias = third_party\iconv\lib\charset.alias
+		third_party\iconv\lib\libcharset.a = third_party\iconv\lib\libcharset.a
+		third_party\iconv\lib\libcharset.dll.a = third_party\iconv\lib\libcharset.dll.a
+		third_party\iconv\lib\libcharset.la = third_party\iconv\lib\libcharset.la
+		third_party\iconv\lib\libiconv.a = third_party\iconv\lib\libiconv.a
+		third_party\iconv\lib\libiconv.la = third_party\iconv\lib\libiconv.la
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_cnary", "lib_cnary", "{50DFBC87-8A7D-4219-8C35-316D3BD008AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcnary", "third_party\lib_cnary\libcnary.vcxproj", "{69CDCB06-C62E-45F6-9E2B-4313C228F957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_usb_muxd", "lib_usb_muxd", "{2596B00B-9F57-4F3B-A700-455DBB0A9067}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libusbmuxd", "third_party\lib_usb_muxd\libusbmuxd.vcxproj", "{53034340-F651-4ACB-8FEF-FFE0FF7AA013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{70784E06-8F70-4CA9-AD82-9D727381447D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ios_com_test", "source\test\ios_com_test\ios_com_test.vcxproj", "{78D069F5-F6D2-4677-BAF7-5D122F724308}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib_gcc", "lib_gcc", "{5E723DEF-22FC-4B4D-A2B1-86150B717DA1}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\lib_gcc\libgcc.a = third_party\lib_gcc\libgcc.a
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gnutls", "gnutls", "{03F1BF83-4E10-4506-804B-7B517A89C608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{044190A8-9D8B-465F-B01B-487437B08FED}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\gnutls\include\gcrypt-module.h = third_party\gnutls\include\gcrypt-module.h
+		third_party\gnutls\include\gcrypt.h = third_party\gnutls\include\gcrypt.h
+		third_party\gnutls\include\gpg-error.h = third_party\gnutls\include\gpg-error.h
+		third_party\gnutls\include\libtasn1.h = third_party\gnutls\include\libtasn1.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{21F65E12-A7B5-4D26-A5AD-D6D7BF0305EB}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\gnutls\lib\libgcrypt.a = third_party\gnutls\lib\libgcrypt.a
+		third_party\gnutls\lib\libgcrypt.def = third_party\gnutls\lib\libgcrypt.def
+		third_party\gnutls\lib\libgcrypt.dll.a = third_party\gnutls\lib\libgcrypt.dll.a
+		third_party\gnutls\lib\libgcrypt.la = third_party\gnutls\lib\libgcrypt.la
+		third_party\gnutls\lib\libgnutls-extra.a = third_party\gnutls\lib\libgnutls-extra.a
+		third_party\gnutls\lib\libgnutls-extra.dll.a = third_party\gnutls\lib\libgnutls-extra.dll.a
+		third_party\gnutls\lib\libgnutls-extra.la = third_party\gnutls\lib\libgnutls-extra.la
+		third_party\gnutls\lib\libgnutls-openssl.a = third_party\gnutls\lib\libgnutls-openssl.a
+		third_party\gnutls\lib\libgnutls-openssl.dll.a = third_party\gnutls\lib\libgnutls-openssl.dll.a
+		third_party\gnutls\lib\libgnutls-openssl.la = third_party\gnutls\lib\libgnutls-openssl.la
+		third_party\gnutls\lib\libgnutls.a = third_party\gnutls\lib\libgnutls.a
+		third_party\gnutls\lib\libgnutls.dll.a = third_party\gnutls\lib\libgnutls.dll.a
+		third_party\gnutls\lib\libgnutls.la = third_party\gnutls\lib\libgnutls.la
+		third_party\gnutls\lib\libgnutlsxx.a = third_party\gnutls\lib\libgnutlsxx.a
+		third_party\gnutls\lib\libgnutlsxx.dll.a = third_party\gnutls\lib\libgnutlsxx.dll.a
+		third_party\gnutls\lib\libgnutlsxx.la = third_party\gnutls\lib\libgnutlsxx.la
+		third_party\gnutls\lib\libgpg-error.a = third_party\gnutls\lib\libgpg-error.a
+		third_party\gnutls\lib\libgpg-error.dll.a = third_party\gnutls\lib\libgpg-error.dll.a
+		third_party\gnutls\lib\libgpg-error.la = third_party\gnutls\lib\libgpg-error.la
+		third_party\gnutls\lib\libtasn1.a = third_party\gnutls\lib\libtasn1.a
+		third_party\gnutls\lib\libtasn1.dll.a = third_party\gnutls\lib\libtasn1.dll.a
+		third_party\gnutls\lib\libtasn1.la = third_party\gnutls\lib\libtasn1.la
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gnutls", "gnutls", "{39184A5E-2175-4FF3-BBBD-07723FD52D39}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\gnutls\include\gnutls\compat.h = third_party\gnutls\include\gnutls\compat.h
+		third_party\gnutls\include\gnutls\crypto.h = third_party\gnutls\include\gnutls\crypto.h
+		third_party\gnutls\include\gnutls\extra.h = third_party\gnutls\include\gnutls\extra.h
+		third_party\gnutls\include\gnutls\gnutls.h = third_party\gnutls\include\gnutls\gnutls.h
+		third_party\gnutls\include\gnutls\gnutlsxx.h = third_party\gnutls\include\gnutls\gnutlsxx.h
+		third_party\gnutls\include\gnutls\openpgp.h = third_party\gnutls\include\gnutls\openpgp.h
+		third_party\gnutls\include\gnutls\openssl.h = third_party\gnutls\include\gnutls\openssl.h
+		third_party\gnutls\include\gnutls\pkcs12.h = third_party\gnutls\include\gnutls\pkcs12.h
+		third_party\gnutls\include\gnutls\x509.h = third_party\gnutls\include\gnutls\x509.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zlib", "zlib", "{42BB06A8-390A-4D30-8436-C38664FA63B4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "third_party\zlib\zlib.vcxproj", "{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libxml2", "libxml2", "{A9396704-580B-47E5-80B4-448F6DA4D7D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "win32", "win32", "{86645DA3-B13B-44B5-9E12-43C95E11CB12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VC10", "VC10", "{FDA1A7F6-C07C-447A-B006-39AAB1201FA3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libxml2", "third_party\lib_xml\libxml2\win32\VC10\libxml2.vcxproj", "{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release for Performance|Win32 = Release for Performance|Win32
+		Release for Performance|x64 = Release for Performance|x64
+		Release_disable_optimization|Win32 = Release_disable_optimization|Win32
+		Release_disable_optimization|x64 = Release_disable_optimization|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Debug|Win32.Build.0 = Debug|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Debug|x64.ActiveCfg = Debug|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Debug|x64.Build.0 = Debug|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release for Performance|Win32.ActiveCfg = Release for Performance|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release for Performance|Win32.Build.0 = Release for Performance|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release for Performance|x64.ActiveCfg = Release for Performance|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release for Performance|x64.Build.0 = Release for Performance|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release_disable_optimization|Win32.ActiveCfg = Release_disable_optimization|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release_disable_optimization|Win32.Build.0 = Release_disable_optimization|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release_disable_optimization|x64.ActiveCfg = Release_disable_optimization|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release_disable_optimization|x64.Build.0 = Release_disable_optimization|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release|Win32.ActiveCfg = Release|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release|Win32.Build.0 = Release|Win32
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release|x64.ActiveCfg = Release|x64
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A}.Release|x64.Build.0 = Release|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Debug|Win32.Build.0 = Debug|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Debug|x64.ActiveCfg = Debug|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Debug|x64.Build.0 = Debug|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release for Performance|Win32.ActiveCfg = Release for Performance|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release for Performance|Win32.Build.0 = Release for Performance|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release for Performance|x64.ActiveCfg = Release for Performance|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release for Performance|x64.Build.0 = Release for Performance|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release_disable_optimization|Win32.ActiveCfg = Release_disable_optimization|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release_disable_optimization|Win32.Build.0 = Release_disable_optimization|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release_disable_optimization|x64.ActiveCfg = Release_disable_optimization|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release_disable_optimization|x64.Build.0 = Release_disable_optimization|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release|Win32.ActiveCfg = Release|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release|Win32.Build.0 = Release|Win32
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release|x64.ActiveCfg = Release|x64
+		{ED99D404-F6B3-517A-4EA7-604A10269355}.Release|x64.Build.0 = Release|x64
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Debug|Win32.Build.0 = Debug|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Debug|x64.ActiveCfg = Debug|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release for Performance|Win32.Build.0 = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release|Win32.ActiveCfg = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release|Win32.Build.0 = Release|Win32
+		{001D1BD0-6795-471A-931D-EC32265F43D0}.Release|x64.ActiveCfg = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Debug|Win32.Build.0 = Debug|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Debug|x64.ActiveCfg = Debug|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release for Performance|Win32.Build.0 = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release|Win32.ActiveCfg = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release|Win32.Build.0 = Release|Win32
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0}.Release|x64.ActiveCfg = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Debug|Win32.Build.0 = Debug|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Debug|x64.ActiveCfg = Debug|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release for Performance|Win32.Build.0 = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release|Win32.ActiveCfg = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release|Win32.Build.0 = Release|Win32
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02}.Release|x64.ActiveCfg = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Debug|Win32.Build.0 = Debug|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Debug|x64.ActiveCfg = Debug|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release for Performance|Win32.Build.0 = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release|Win32.ActiveCfg = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release|Win32.Build.0 = Release|Win32
+		{3E2B717A-7A6F-4FF5-9025-738968045272}.Release|x64.ActiveCfg = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Debug|Win32.Build.0 = Debug|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Debug|x64.ActiveCfg = Debug|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release for Performance|Win32.Build.0 = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release|Win32.ActiveCfg = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release|Win32.Build.0 = Release|Win32
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03}.Release|x64.ActiveCfg = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Debug|Win32.Build.0 = Debug|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Debug|x64.ActiveCfg = Debug|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release for Performance|Win32.Build.0 = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release|Win32.ActiveCfg = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release|Win32.Build.0 = Release|Win32
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957}.Release|x64.ActiveCfg = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Debug|Win32.Build.0 = Debug|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Debug|x64.ActiveCfg = Debug|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release for Performance|Win32.Build.0 = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release|Win32.ActiveCfg = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release|Win32.Build.0 = Release|Win32
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013}.Release|x64.ActiveCfg = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Debug|Win32.Build.0 = Debug|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Debug|x64.ActiveCfg = Debug|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release for Performance|Win32.Build.0 = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release|Win32.ActiveCfg = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release|Win32.Build.0 = Release|Win32
+		{78D069F5-F6D2-4677-BAF7-5D122F724308}.Release|x64.ActiveCfg = Release|Win32
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Debug|Win32.Build.0 = Debug|Win32
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Debug|x64.ActiveCfg = Debug|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Debug|x64.Build.0 = Debug|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release for Performance|Win32.ActiveCfg = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release for Performance|x64.ActiveCfg = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release for Performance|x64.Build.0 = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release_disable_optimization|Win32.ActiveCfg = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release_disable_optimization|x64.ActiveCfg = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release_disable_optimization|x64.Build.0 = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release|Win32.ActiveCfg = Release|Win32
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release|Win32.Build.0 = Release|Win32
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release|x64.ActiveCfg = Release|x64
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49}.Release|x64.Build.0 = Release|x64
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Debug|Win32.Build.0 = Debug|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Debug|x64.ActiveCfg = Debug|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release for Performance|Win32.Build.0 = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release|Win32.ActiveCfg = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release|Win32.Build.0 = Release|Win32
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26E6D473-D7F8-4F14-A7CB-B5B37DADABF6} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{F04F80BC-D064-432B-88AC-49124C2A59CF} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{42CEF750-EDA9-4347-96A5-111DBA5AE3CB} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{EA608B53-34D7-4120-9EC1-4DBDA55BEF2C} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{A69806F0-C565-4046-9B7D-28B761DFE848} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{3F8E5D5B-91AF-4E72-A15F-66A0C75A7441} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{087614DC-83D7-40A7-9AAC-1C5737B5F93F} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{8E742279-EF8F-49F0-9A0C-A921CD70749D} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{96A6E9F4-6F4A-460A-96F7-E3D3C7D05F85} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{50DFBC87-8A7D-4219-8C35-316D3BD008AC} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{2596B00B-9F57-4F3B-A700-455DBB0A9067} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{5E723DEF-22FC-4B4D-A2B1-86150B717DA1} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{03F1BF83-4E10-4506-804B-7B517A89C608} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{42BB06A8-390A-4D30-8436-C38664FA63B4} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C} = {26E6D473-D7F8-4F14-A7CB-B5B37DADABF6}
+		{59CE1321-32F0-4F43-BECB-84C21B4BFC8D} = {EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C}
+		{ED99D404-F6B3-517A-4EA7-604A10269355} = {EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C}
+		{232F1275-7328-4F8D-BFF3-5034297E2DD3} = {59CE1321-32F0-4F43-BECB-84C21B4BFC8D}
+		{B68EE2BD-0BA9-9949-464B-39FFE5CABD0A} = {232F1275-7328-4F8D-BFF3-5034297E2DD3}
+		{7D3AB9D5-D308-47CB-80C9-B0DBC3176FA9} = {74F3B875-0C3C-4583-B684-7A2A520F841F}
+		{F520FC6E-9665-4EB7-8C66-CF4D6D713385} = {74F3B875-0C3C-4583-B684-7A2A520F841F}
+		{70784E06-8F70-4CA9-AD82-9D727381447D} = {74F3B875-0C3C-4583-B684-7A2A520F841F}
+		{CD08B130-8155-46F2-9A6A-1DD58F2C4840} = {F520FC6E-9665-4EB7-8C66-CF4D6D713385}
+		{001D1BD0-6795-471A-931D-EC32265F43D0} = {CD08B130-8155-46F2-9A6A-1DD58F2C4840}
+		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0} = {F04F80BC-D064-432B-88AC-49124C2A59CF}
+		{C2FC6AFF-553B-4B8F-8158-93D8D50A8C02} = {42CEF750-EDA9-4347-96A5-111DBA5AE3CB}
+		{13C99B27-B0C8-4A6F-923C-A1CAF40BD2F5} = {EA608B53-34D7-4120-9EC1-4DBDA55BEF2C}
+		{4DD8FA24-EAD7-4930-B89E-E7C99C1C5463} = {EA608B53-34D7-4120-9EC1-4DBDA55BEF2C}
+		{EB5F5B05-A1BE-4384-A549-C482740F152D} = {13C99B27-B0C8-4A6F-923C-A1CAF40BD2F5}
+		{3E2B717A-7A6F-4FF5-9025-738968045272} = {3F8E5D5B-91AF-4E72-A15F-66A0C75A7441}
+		{1C06E1E0-3FF7-4DAF-A9BA-7C8E2FA11B03} = {087614DC-83D7-40A7-9AAC-1C5737B5F93F}
+		{A9396704-580B-47E5-80B4-448F6DA4D7D8} = {8E742279-EF8F-49F0-9A0C-A921CD70749D}
+		{982030DB-BF3E-4313-8BAE-779F2C93AB2B} = {96A6E9F4-6F4A-460A-96F7-E3D3C7D05F85}
+		{EA85F34A-78DA-4954-BAB1-71F1F757D158} = {96A6E9F4-6F4A-460A-96F7-E3D3C7D05F85}
+		{69CDCB06-C62E-45F6-9E2B-4313C228F957} = {50DFBC87-8A7D-4219-8C35-316D3BD008AC}
+		{53034340-F651-4ACB-8FEF-FFE0FF7AA013} = {2596B00B-9F57-4F3B-A700-455DBB0A9067}
+		{78D069F5-F6D2-4677-BAF7-5D122F724308} = {70784E06-8F70-4CA9-AD82-9D727381447D}
+		{044190A8-9D8B-465F-B01B-487437B08FED} = {03F1BF83-4E10-4506-804B-7B517A89C608}
+		{21F65E12-A7B5-4D26-A5AD-D6D7BF0305EB} = {03F1BF83-4E10-4506-804B-7B517A89C608}
+		{39184A5E-2175-4FF3-BBBD-07723FD52D39} = {044190A8-9D8B-465F-B01B-487437B08FED}
+		{2FCD4B66-9CF9-4C8F-BC70-37CD20002D49} = {42BB06A8-390A-4D30-8436-C38664FA63B4}
+		{86645DA3-B13B-44B5-9E12-43C95E11CB12} = {A9396704-580B-47E5-80B4-448F6DA4D7D8}
+		{FDA1A7F6-C07C-447A-B006-39AAB1201FA3} = {86645DA3-B13B-44B5-9E12-43C95E11CB12}
+		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C} = {FDA1A7F6-C07C-447A-B006-39AAB1201FA3}
 	EndGlobalSection
 EndGlobal
