@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <fstream>
+#include <functional>
 #include <utility>
 
 #include "third_party/chromium/base/threading/thread.h"
@@ -23,6 +24,7 @@ using std::ifstream;
 using std::pair;
 using std::make_pair;
 using std::unique_ptr;
+using std::function;
 using base::Thread;
 using base::Lock;
 using base::AutoLock;
@@ -146,44 +148,46 @@ void FileTransfer::TransferFileToApplicationPrivate(const string& udid,
 {
     auto transferProcessNotify = 
         ClassProvider::GetInstance()->GetTransferProgressNotifition();
-    if (!transferProcessNotify)
+    if (transferProcessNotify)
         transferProcessNotify->NotifyTransferBeginning(transferTaskID);
 
-    afc_client_t afcc = nullptr;
-    do {
-        auto iosConnectorProvider = IOSConnectorProvider::GetInstance();
-        auto device = iosConnectorProvider->GetDeviceConnector(udid);
-        if (!device)
-            break;
-
-        auto client = iosConnectorProvider->GetLockdowndCliect(
-            device.get(), "transfer_to_application");
-        if (!client)
-            break;
-
-        auto desc = iosConnectorProvider->GetlockdowndServiceDescriptor(
-            client.get(), IOSServiceNames::GetHouseArrestServiceName());
-        if (!desc)
-            break;
-
-        auto houseArrest = iosConnectorProvider->GetHouseArrestClient(
-            device.get(), desc.get(), applicationID);
-        if (!houseArrest)
-            break;
-
-        afcc = iosConnectorProvider->GetAFCClientByHouseArrsetClient(
-            houseArrest.get());
-    } while (false);
-
-    if (!afcc)
+    auto flagDestroyer = 
+        [transferTaskID, transferProcessNotify] (const bool* needToNotify)
     {
-        if (transferProcessNotify)
+        if (transferProcessNotify && (*needToNotify))
             transferProcessNotify->NotifyTransferError(
                 transferTaskID, 
                 ITransferProgressNotifition::BUILD_CONNECT_ERROR);
-
+    };
+    unique_ptr<bool, function<void (bool*)>> notifyToConnectErrorFlag(
+        new bool(true), flagDestroyer);
+    afc_client_t afcc = nullptr;
+    auto iosConnectorProvider = IOSConnectorProvider::GetInstance();
+    auto device = iosConnectorProvider->GetDeviceConnector(udid);
+    if (!device)
         return;
-    }
+
+    auto client = iosConnectorProvider->GetLockdowndCliect(
+        device.get(), "transfer_to_application");
+    if (!client)
+        return;
+
+    auto desc = iosConnectorProvider->GetlockdowndServiceDescriptor(
+        client.get(), IOSServiceNames::GetHouseArrestServiceName());
+    if (!desc)
+        return;
+
+    auto houseArrest = iosConnectorProvider->GetHouseArrestClient(
+        device.get(), desc.get(), applicationID);
+    if (!houseArrest)
+        return;
+
+    afcc = iosConnectorProvider->GetAFCClientByHouseArrsetClient(
+        houseArrest.get());
+
+    if (afcc)
+        *notifyToConnectErrorFlag = false;
+    
     FilePath srcPath(filePath);
     FilePath dstPath(applicationDocumentDirctory);
     dstPath = dstPath.Append(srcPath.BaseName());
