@@ -5,6 +5,8 @@
 #include <functional>
 #include <utility>
 #include <boost/algorithm/string/replace.hpp>
+#include <boost/algorithm/string/split.hpp>
+#include <boost/format.hpp>
 
 #include "third_party/chromium/base/threading/thread.h"
 #include "third_party/chromium/base/file_path.h"
@@ -30,6 +32,8 @@ using std::unique_ptr;
 using std::function;
 using std::find_if;
 using boost::replace_all;
+using boost::split;
+using boost::wformat;
 using base::Thread;
 using base::Lock;
 using base::CancellationFlag;
@@ -311,7 +315,30 @@ bool FileTransfer::CreateDeviceDirectory(afc_client_private* afcc,
                                          const wstring& directory, 
                                          bool recursively)
 {
-    return true;
+    if (!afcc)
+        return false;
+
+    //此处要等多层目录创建成功后才能删除
+//     list<wstring> dirs;
+//     split(dirs, directory, [] (char c) { return (L'/' == c) || (L'\\' == c); });
+// 
+//     wstring destDirectory;
+//     auto error = AFC_E_SUCCESS;
+//     for (auto dir = dirs.begin(); dir != dirs.end(); ++dir)
+//     {
+//         wformat f("%s/%s");
+//         f % destDirectory % (*dir)
+//         destDirectory = f.str();
+//         int fileHandle = 0;
+//         error = afc_file_open(afcc, SysWideToUTF8(destDirectory).c_str(), 
+//                               AFC_FOPEN_RDONLY, &fileHandle);
+//         if (error != AFC_E_SUCCESS)
+//             break;
+// 
+// 
+//     }
+    auto error = afc_make_directory(afcc, SysWideToUTF8(directory).c_str());
+    return AFC_E_SUCCESS == error;
 }
 
 bool FileTransfer::DeleteTaskByTransferTaskID(int transferTaskID, 
