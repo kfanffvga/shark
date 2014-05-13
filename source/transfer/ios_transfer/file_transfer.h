@@ -1,6 +1,7 @@
 ﻿#ifndef _FILE_TRANSFER_H_
 #define _FILE_TRANSFER_H_
 
+#include <utility>
 #include <list>
 
 #include "source/transfer/ios_transfer/ios_interface.h"
@@ -10,6 +11,7 @@ namespace base
 {
 class Thread;
 class Lock;
+class CancellationFlag;
 }
 
 namespace ios_transfer
@@ -49,17 +51,27 @@ protected:
     virtual HRESULT __stdcall CancelTransferTask(int transferTaskID) override;
 
 private:
+    typedef std::pair<int, std::shared_ptr<base::CancellationFlag>> 
+        TransferTask;
+
     void TransferFileToApplicationPrivate(const std::string& udid, 
                                           const std::string& applicationID, 
                                           const std::wstring& filePath, 
-                                          int transferTaskID);
+                                          const TransferTask& task);
+
     bool TransferFileToIOSDevice(afc_client_private* afcc,
                                  const std::wstring& srcPath, 
                                  const std::wstring& dstPath, 
-                                 int transferTaskID);
+                                 const TransferTask& transferTaskID);
+
+    bool CreateDeviceDirectory(afc_client_private* afcc, 
+                               const std::wstring& directory, bool recursively);
+
+    bool DeleteTaskByTransferTaskID(int transferTaskID, bool needCancel);
+
     std::unique_ptr<base::Thread> thread_;
     int taskID_;
-    std::list<int> tasks_;
+    std::list<TransferTask> tasks_;
     std::unique_ptr<base::Lock> lock_;
 };
 

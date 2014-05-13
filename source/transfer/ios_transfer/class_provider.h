@@ -6,6 +6,7 @@
 
 class InitialzedConfigure;
 class DeviceDescribe;
+class FileTransfer;
 
 namespace ios_transfer
 {
@@ -32,6 +33,7 @@ private:
 
     scoped_refptr<InitialzedConfigure> initialzedConfigure_;
     scoped_refptr<DeviceDescribe> deviceDescribe_;
+    scoped_refptr<FileTransfer> fileTransfer_;
 
     DISALLOW_COPY_AND_ASSIGN(ClassProvider);
 };

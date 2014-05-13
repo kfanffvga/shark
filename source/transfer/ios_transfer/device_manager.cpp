@@ -57,6 +57,7 @@ void DeviceManager::Init()
         idevice_set_debug_level(1);
         idevice_event_subscribe(ListenDeviceInOrOut, this);
     }
+    initialzed_ = true;
 }
 
 void DeviceManager::ReceiveDeviceInOrOutInfo(bool isIn, const string& udid, 

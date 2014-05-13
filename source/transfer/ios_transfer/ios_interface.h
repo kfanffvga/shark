@@ -46,7 +46,7 @@ static const GUID CLSID_IOSTransfer =
      0x20};
 
 // {E4B91FB7-62A7-4BCA-8B1B-5B8410879205}
-static const GUID IID_Transfer = 
+static const GUID IID_ITransfer = 
     {0xe4b91fb7, 0x62a7, 0x4bca, 0x8b, 0x1b, 0x5b, 0x84, 0x10, 0x87, 0x92, 
      0x05};
 

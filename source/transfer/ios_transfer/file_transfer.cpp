@@ -4,11 +4,13 @@
 #include <fstream>
 #include <functional>
 #include <utility>
+#include <boost/algorithm/string/replace.hpp>
 
 #include "third_party/chromium/base/threading/thread.h"
 #include "third_party/chromium/base/file_path.h"
 #include "third_party/chromium/base/file_util.h"
 #include "third_party/chromium/base/bind.h"
+#include "third_party/chromium/base/synchronization/cancellation_flag.h"
 #include "third_party/chromium/base/sys_string_conversions.h"
 #include "third_party/lib_ios_mobile_device/include/libimobiledevice/afc.h"
 
@@ -23,10 +25,14 @@ using std::wstring;
 using std::ifstream;
 using std::pair;
 using std::make_pair;
+using std::shared_ptr;
 using std::unique_ptr;
 using std::function;
+using std::find_if;
+using boost::replace_all;
 using base::Thread;
 using base::Lock;
+using base::CancellationFlag;
 using base::AutoLock;
 using base::SysWideToUTF8;
 using base::Bind;
@@ -59,7 +65,7 @@ FileTransfer::~FileTransfer()
 
 HRESULT FileTransfer::NonDelegateQueryInterface(const GUID& iid, void** v)
 {
-    if (ios_transfer::IID_DeviceDescribe == iid)
+    if (ios_transfer::IID_ITransfer == iid)
     {
         *v = dynamic_cast<ITransfer*>(this);
         AddRef();
@@ -123,41 +129,42 @@ HRESULT FileTransfer::TransferFileToApplication(DeviceID id,
     if (!thread_->IsRunning())
         thread_->Start();
 
+    auto task = make_pair(*transferTaskID, 
+                          shared_ptr<CancellationFlag>(new CancellationFlag()));
     thread_->message_loop()->PostTask(
         FROM_HERE, 
         Bind(&FileTransfer::TransferFileToApplicationPrivate, this, 
-             udid, SysWideToUTF8(appid), pathValue.value(), *transferTaskID));
+             udid, SysWideToUTF8(appid), pathValue.value(), task));
+
+    tasks_.push_back(task);
     return S_OK;
 }
 
 HRESULT FileTransfer::CancelTransferTask(int transferTaskID)
 {
-    AutoLock l(*lock_);
-    auto res = find(tasks_.begin(), tasks_.end(), transferTaskID);
-    if (tasks_.end() == res)
-        return ios_transfer::E_TRANSFER_ID_NOT_FOUND;
-
-    tasks_.erase(res);
-    return S_OK;
+    bool success = DeleteTaskByTransferTaskID(transferTaskID, true);
+    return success ? S_OK : ios_transfer::E_TRANSFER_ID_NOT_FOUND;
 }
 
 void FileTransfer::TransferFileToApplicationPrivate(const string& udid, 
                                                     const string& applicationID, 
                                                     const wstring& filePath, 
-                                                    int transferTaskID)
+                                                    const TransferTask& task)
 {
     auto transferProcessNotify = 
         ClassProvider::GetInstance()->GetTransferProgressNotifition();
     if (transferProcessNotify)
-        transferProcessNotify->NotifyTransferBeginning(transferTaskID);
+        transferProcessNotify->NotifyTransferBeginning(task.first);
 
     auto flagDestroyer = 
-        [transferTaskID, transferProcessNotify] (const bool* needToNotify)
+        [task, transferProcessNotify] (const bool* needToNotify)
     {
         if (transferProcessNotify && (*needToNotify))
             transferProcessNotify->NotifyTransferError(
-                transferTaskID, 
+                task.first, 
                 ITransferProgressNotifition::BUILD_CONNECT_ERROR);
+
+        delete needToNotify;
     };
     unique_ptr<bool, function<void (bool*)>> notifyToConnectErrorFlag(
         new bool(true), flagDestroyer);
@@ -187,20 +194,27 @@ void FileTransfer::TransferFileToApplicationPrivate(const string& udid,
 
     if (afcc)
         *notifyToConnectErrorFlag = false;
-    
-    FilePath srcPath(filePath);
-    FilePath dstPath(applicationDocumentDirctory);
-    dstPath = dstPath.Append(srcPath.BaseName());
-    auto success = TransferFileToIOSDevice(afcc, srcPath.value(), 
-                                           dstPath.value(), transferTaskID);
+
+    auto success = 
+        CreateDeviceDirectory(afcc, applicationDocumentDirctory, false);
+    if (success)
+    {
+        FilePath srcPath(filePath);
+        FilePath dstPath(applicationDocumentDirctory);
+        dstPath = dstPath.Append(srcPath.BaseName());
+        success = TransferFileToIOSDevice(afcc, srcPath.value(), 
+                                          dstPath.value(), task);
+    }
     if (transferProcessNotify)
-        transferProcessNotify->NotifyTransferFinished(transferTaskID, success);    
+        transferProcessNotify->NotifyTransferFinished(task.first, success);  
+
+    DeleteTaskByTransferTaskID(task.first, false);
 }
 
 bool FileTransfer::TransferFileToIOSDevice(afc_client_private* afcc,
                                            const wstring& srcPath, 
                                            const wstring& dstPath, 
-                                           int transferTaskID)
+                                           const TransferTask& task)
 {
     if (!afcc)
         return false;
@@ -210,9 +224,11 @@ bool FileTransfer::TransferFileToIOSDevice(afc_client_private* afcc,
         ITransferProgressNotifition::UNKNOWN_ERROR;
     bool success = false;
     do {
-         auto afcError = afc_file_open(afcc, 
-                                       SysWideToUTF8(dstPath.c_str()).c_str(), 
-                                       AFC_FOPEN_APPEND, &fileHandle);
+        wstring path = dstPath;
+        replace_all(path, L"\\", L"/");
+        auto afcError = afc_file_open(afcc, 
+                                      SysWideToUTF8(path.c_str()).c_str(), 
+                                      AFC_FOPEN_APPEND, &fileHandle);
         if (afcError != AFC_E_SUCCESS)
         {
             error = ITransferProgressNotifition::DIRECTORY_NOT_FOUND;
@@ -230,6 +246,9 @@ bool FileTransfer::TransferFileToIOSDevice(afc_client_private* afcc,
             unique_ptr<char>(new char[bufferSize]), make_pair(0, 0));
         int64 sendedTotalSize = 0;
         do {
+            if (task.second->IsSet())
+                break;
+
             // 从文件中读取数据到缓存
             if (buffer.second.first == buffer.second.second)
             {
@@ -265,19 +284,51 @@ bool FileTransfer::TransferFileToIOSDevice(afc_client_private* afcc,
                 ClassProvider::GetInstance()->GetTransferProgressNotifition();
             if (transferProcessNotify)
                 transferProcessNotify->NotifyTransferProgress(
-                    transferTaskID, 
+                    task.first, 
                     static_cast<int>(sendedTotalSize / fileSize * 100));
 
+            if (task.second->IsSet())
+                break;
+
         } while (sendedTotalSize < fileSize);
-        success = true;
+
+        if (error != ITransferProgressNotifition::UNKNOWN_ERROR)
+            success = true;
+
     } while (false);
-    if (!success)
+    if ((!success) && (!task.second->IsSet()))
     {
         auto transferProcessNotify = 
             ClassProvider::GetInstance()->GetTransferProgressNotifition();
         if (transferProcessNotify)
-            transferProcessNotify->NotifyTransferError(transferTaskID, error);
+            transferProcessNotify->NotifyTransferError(task.first, error);
     }
 
     return success;
+}
+
+bool FileTransfer::CreateDeviceDirectory(afc_client_private* afcc, 
+                                         const wstring& directory, 
+                                         bool recursively)
+{
+    return true;
+}
+
+bool FileTransfer::DeleteTaskByTransferTaskID(int transferTaskID, 
+                                              bool needCancel)
+{
+    AutoLock l(*lock_);
+    auto condition = [transferTaskID] (const TransferTask& task) -> bool
+    {
+        return transferTaskID == task.first;
+    };
+    auto res = find_if(tasks_.begin(), tasks_.end(), condition);
+    if (tasks_.end() == res)
+        return false;
+
+    if (needCancel)
+        res->second->Set();
+
+    tasks_.erase(res);
+    return true;
 }

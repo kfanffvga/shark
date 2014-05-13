@@ -4,12 +4,16 @@
 #include "source/transfer/ios_transfer/initialzed_configure.h"
 #include "source/transfer/ios_transfer/device_describe.h"
 #include "source/transfer/ios_transfer/device_manager.h"
+#include "source/transfer/ios_transfer/file_transfer.h"
 
 using ios_transfer::IDeviceNotifition;
 using ios_transfer::ITransferProgressNotifition;
+using ios_transfer::ITransfer;
 
 ClassProvider::ClassProvider()
     : initialzedConfigure_()
+    , deviceDescribe_()
+    , fileTransfer_()
 {
 
 }
@@ -22,9 +26,12 @@ ClassProvider::~ClassProvider()
 HRESULT ClassProvider::QueryInterface(const GUID& iid, void** v)
 {
     DeviceManager::GetInstance()->Init();
-    if (ios_transfer::IID_Transfer == iid)
+    if (ios_transfer::IID_ITransfer == iid)
     {
-        *v = nullptr;
+        if (!fileTransfer_)
+            fileTransfer_ = new FileTransfer();
+
+        return fileTransfer_->QueryInterface(iid, v);
     }
     else if (ios_transfer::IID_DeviceDescribe == iid)
     {
