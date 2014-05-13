@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="application_describe.cpp" />
+    <ClCompile Include="application_key_names_enumerator.cpp" />
     <ClCompile Include="class_provider.cpp" />
     <ClCompile Include="com_factory.cpp" />
     <ClCompile Include="device_describe.cpp" />
@@ -22,8 +23,10 @@
     <ClCompile Include="initialzed_configure.cpp" />
     <ClCompile Include="ios_connector_provider.cpp" />
     <ClCompile Include="ios_service_names.cpp" />
+    <ClCompile Include="itunes_folder_type_enumerator.cpp" />
     <ClCompile Include="string_list_enumerator.cpp" />
     <ClCompile Include="unknown.cpp" />
+    <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\third_party\chromium\base\base.vcxproj">
@@ -69,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application_describe.h" />
+    <ClInclude Include="application_key_names_enumerator.h" />
     <ClInclude Include="class_provider.h" />
     <ClInclude Include="com_factory.h" />
     <ClInclude Include="device_describe.h" />
@@ -79,8 +83,10 @@
     <ClInclude Include="ios_connector_provider.h" />
     <ClInclude Include="ios_interface.h" />
     <ClInclude Include="ios_service_names.h" />
+    <ClInclude Include="itunes_folder_type_enumerator.h" />
     <ClInclude Include="string_list_enumerator.h" />
     <ClInclude Include="unknown.h" />
+    <ClInclude Include="util.h" />
     <ClInclude Include="value_enumerator.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

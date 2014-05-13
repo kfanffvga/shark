@@ -6,19 +6,21 @@
 #include "third_party/chromium/base/string_piece.h"
 #include "third_party/chromium/base/sys_string_conversions.h"
 #include "third_party/lib_plist/include/plist/plist.h"
+#include "third_party/chromium/base/memory/ref_counted.h"
+
+#include "source/transfer/ios_transfer/application_key_names_enumerator.h"
 
 using std::weak_ptr;
 using std::string;
 using std::unique_ptr;
-using std::shared_ptr;
 using std::function;
-using std::vector;
 using std::wstring;
 using std::pair;
 using std::make_pair;
 using base::SysUTF8ToWide;
-using ios_transfer::ApplicationNamesDescribe;
 using ios_transfer::ApplicationPropertyType;
+using ios_transfer::IApplicationKeyNamesEnumerator;
+using ios_transfer::IStringListEnumerator;
 
 ApplicationDescribe::ApplicationDescribe(weak_ptr<DeviceInfo> deviceInfo,
                                          const string& applicationInfo)
@@ -41,10 +43,16 @@ HRESULT ApplicationDescribe::NonDelegateQueryInterface(const GUID& iid,
 }
 
 HRESULT ApplicationDescribe::GetApplicationPropertyNameCollection(
-    ApplicationNamesDescribe* names)
+    IApplicationKeyNamesEnumerator** names)
 {
+    if (*names)
+        return E_POINTER;
+
     if (!deviceInfo_.lock())
         return ios_transfer::E_DEVICE_NOT_FOUND;
+
+    scoped_refptr<ApplicationKeyNamesEnumerator> enumerator = 
+        new ApplicationKeyNamesEnumerator();
 
     auto plistDestroyer = [] (plist_t* p) { plist_free(*p); };
     unique_ptr<plist_t, function<void (plist_t*)>> pl(nullptr, plistDestroyer);
@@ -52,42 +60,44 @@ HRESULT ApplicationDescribe::GetApplicationPropertyNameCollection(
     if (!pl)
         return E_FAIL;
 
-    FillkeyAndTypeInDesc(names, *pl, L"");
+    FillkeyAndTypeInDesc(enumerator.get(), *pl, L"");
+    *names = dynamic_cast<IApplicationKeyNamesEnumerator*>(enumerator.get());
+    (*names)->AddRef();
     return S_OK;
 }
 
-HRESULT ApplicationDescribe::GetApplicationIntValueByName(const wstring& key, 
+HRESULT ApplicationDescribe::GetApplicationIntValueByName(const wchar_t* key, 
                                                           __int64* value)
 {
     return E_NOTIMPL;
 }
 
-HRESULT ApplicationDescribe::GetApplicationFloatValueByName(const wstring& key, 
+HRESULT ApplicationDescribe::GetApplicationFloatValueByName(const wchar_t* key, 
                                                             float* value)
 {
     return E_NOTIMPL;
 }
 
-HRESULT ApplicationDescribe::GetApplicationStringValueByName(const wstring& key, 
-                                                             wstring* value)
+HRESULT ApplicationDescribe::GetApplicationStringValueByName(const wchar_t* key, 
+                                                             wchar_t** value)
 {
     return E_NOTIMPL;
 }
 
 HRESULT ApplicationDescribe::GetApplicationStringArrayValueByName(
-    const wstring& key, vector<int>* values)
+    const wchar_t* key, IStringListEnumerator** values)
 {
     return E_NOTIMPL;
 }
 
-HRESULT ApplicationDescribe::GetApplicationIcon(shared_ptr<char> buffer, 
-                                                int size, int* realSize)
+HRESULT ApplicationDescribe::GetApplicationIcon(char** buffer, int* size)
 {
     return E_NOTIMPL;
 }
 
 void ApplicationDescribe::FillkeyAndTypeInDesc(
-    ApplicationNamesDescribe* names, plist_t node, const wstring& currentKey)
+    ApplicationKeyNamesEnumerator* names, plist_t node, 
+    const wstring& currentKey)
 {
     // 由于此处的plist是app的，因此第一个肯定是dict，
     plist_dict_iter it = nullptr;
@@ -108,26 +118,26 @@ void ApplicationDescribe::FillkeyAndTypeInDesc(
         switch (type)
         {
         case PLIST_BOOLEAN:
-            names->push_back(make_pair(key, ios_transfer::BOOLEAN_TYPE));
+            names->AddElement(make_pair(key, ios_transfer::BOOLEAN_TYPE));
             break;
 
         case PLIST_UINT:
-            names->push_back(make_pair(key, ios_transfer::INT64_TYPE));
+            names->AddElement(make_pair(key, ios_transfer::INT64_TYPE));
             break;
 
         case PLIST_REAL:
-            names->push_back(make_pair(key, ios_transfer::FLOAT_TYPE));
+            names->AddElement(make_pair(key, ios_transfer::FLOAT_TYPE));
             break;
 
         case PLIST_STRING: 
         case PLIST_DATE: 
         case PLIST_UID: 
         case PLIST_KEY:
-            names->push_back(make_pair(key, ios_transfer::STRING_TYPE));
+            names->AddElement(make_pair(key, ios_transfer::STRING_TYPE));
             break;
 
         case PLIST_ARRAY:
-            names->push_back(make_pair(key, ios_transfer::STRING_ARRAY_TYPE));
+            names->AddElement(make_pair(key, ios_transfer::STRING_ARRAY_TYPE));
             break;
 
         case PLIST_DICT:

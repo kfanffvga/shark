@@ -31,20 +31,20 @@ protected:
     virtual HRESULT __stdcall GetTotalSpace(ios_transfer::DeviceID id, 
                                             int64* size) override;
     virtual HRESULT __stdcall GetSerialNumber(
-        ios_transfer::DeviceID id, std::wstring* serialNumber) override;
+        ios_transfer::DeviceID id, wchar_t** serialNumber) override;
     virtual HRESULT __stdcall GetUniqueDefineID(
-        ios_transfer::DeviceID id, std::wstring* uniqueDefineID) override;
+        ios_transfer::DeviceID id, wchar_t** uniqueDefineID) override;
     virtual HRESULT __stdcall GetApplicationCount(ios_transfer::DeviceID id, 
                                                   int* count) override;
     virtual HRESULT __stdcall GetApplicationIDs(
         ios_transfer::DeviceID id, 
         ios_transfer::IStringListEnumerator** applicationIDs) override;
     virtual HRESULT __stdcall GetApplicationInfo(
-        ios_transfer::DeviceID id, const std::wstring& applicationID,
+        ios_transfer::DeviceID id, const wchar_t* applicationID,
         ios_transfer::IApplicationInfo** applicationInfo) override;
     virtual HRESULT __stdcall GetITunesCommonFolderType(
         ios_transfer::DeviceID id, 
-        std::vector<ios_transfer::ITunesCommonFolderType>* folderTypes) 
+        ios_transfer::IITunesCommonFolderTypeEnumerator** folderTypes) 
         override;
 
 private: 

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IntDir>$(SolutionDir)..\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\$(Configuration)\lib\</OutDir>
+    <IncludePath>$(BOOST_DIR);$(WindowsSdkDir)..\v7.1\Samples\Multimedia\DirectShow\BaseClasses;$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <ReferencePath>
+    </ReferencePath>
+    <LibraryPath>$(WindowsSdkDir)..\v7.1\Samples\Multimedia\DirectShow\BaseClasses\$(Configuration);$(SolutionDir)\..\libs\$(Configuration);$(SolutionDir)\..\$(Configuration)\lib;$(BOOST_DIR)\lib32-msvc-10.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>

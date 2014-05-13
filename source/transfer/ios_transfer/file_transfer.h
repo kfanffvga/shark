@@ -34,17 +34,17 @@ public:
 
 protected:
     virtual HRESULT __stdcall TransferFileToITunes(
-        ios_transfer::DeviceID id, const std::wstring& filePath,
+        ios_transfer::DeviceID id, const wchar_t* filePath,
         ios_transfer::ITunesCommonFolderType folderType, int* transferTaskID) 
         override;
 
     virtual HRESULT __stdcall TransferFileAsIOSRing(
-        ios_transfer::DeviceID id, const std::wstring& filePath, 
+        ios_transfer::DeviceID id, const wchar_t* filePath, 
         int* transferTaskID) override;
 
     virtual HRESULT __stdcall TransferFileToApplication(
-        ios_transfer::DeviceID id, const std::wstring& filePath, 
-        const std::wstring& applicationID, int* transferTaskID) override;
+        ios_transfer::DeviceID id, const wchar_t* filePath, 
+        const wchar_t* applicationID, int* transferTaskID) override;
 
     virtual HRESULT __stdcall CancelTransferTask(int transferTaskID) override;
 

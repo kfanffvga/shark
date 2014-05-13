@@ -11,6 +11,7 @@
 #include "source/transfer/ios_transfer/class_provider.h"
 #include "source/transfer/ios_transfer/application_describe.h"
 #include "source/transfer/ios_transfer/string_list_enumerator.h"
+#include "source/transfer/ios_transfer/util.h"
 
 using std::wstring;
 using std::vector;
@@ -25,6 +26,7 @@ using ios_transfer::DeviceID;
 using ios_transfer::IApplicationInfo;
 using ios_transfer::ITunesCommonFolderType;
 using ios_transfer::IStringListEnumerator;
+using ios_transfer::IITunesCommonFolderTypeEnumerator;
 
 DeviceDescribe::DeviceDescribe()
     : Unknown()
@@ -87,9 +89,9 @@ HRESULT DeviceDescribe::GetTotalSpace(DeviceID id, int64* size)
     return S_OK;
 }
 
-HRESULT DeviceDescribe::GetSerialNumber(DeviceID id, wstring* serialNumber)
+HRESULT DeviceDescribe::GetSerialNumber(DeviceID id, wchar_t** serialNumber)
 {
-    if (!serialNumber)
+    if (*serialNumber)
         return E_POINTER;
 
     auto deviceInfo = DeviceManager::GetInstance()->GetDeviceInfoByDeviceID(id);
@@ -98,14 +100,15 @@ HRESULT DeviceDescribe::GetSerialNumber(DeviceID id, wstring* serialNumber)
 
     {
         AutoLock l(*lock_);
-        *serialNumber = SysUTF8ToWide(deviceInfo->productInfo.SerialNumber);
+        WStringToWChar(SysUTF8ToWide(deviceInfo->productInfo.SerialNumber), 
+                       serialNumber);
     }
     return S_OK;
 }
 
-HRESULT DeviceDescribe::GetUniqueDefineID(DeviceID id, wstring* uniqueDefineID)
+HRESULT DeviceDescribe::GetUniqueDefineID(DeviceID id, wchar_t** uniqueDefineID)
 {
-    if (!uniqueDefineID)
+    if (*uniqueDefineID)
         return E_POINTER;
 
     auto deviceInfo = DeviceManager::GetInstance()->GetDeviceInfoByDeviceID(id);
@@ -114,7 +117,8 @@ HRESULT DeviceDescribe::GetUniqueDefineID(DeviceID id, wstring* uniqueDefineID)
 
     {
         AutoLock l(*lock_);
-        *uniqueDefineID = SysUTF8ToWide(deviceInfo->productInfo.UniqueDefineID);
+        WStringToWChar(SysUTF8ToWide(deviceInfo->productInfo.UniqueDefineID),
+                       uniqueDefineID);
     }
     return S_OK;
 }
@@ -161,7 +165,7 @@ HRESULT DeviceDescribe::GetApplicationIDs(
 }
 
 HRESULT DeviceDescribe::GetApplicationInfo(DeviceID id, 
-                                           const wstring& applicationID, 
+                                           const wchar_t* applicationID, 
                                            IApplicationInfo** applicationInfo)
 {
     if (*applicationInfo)
@@ -192,9 +196,9 @@ HRESULT DeviceDescribe::GetApplicationInfo(DeviceID id,
 }
 
 HRESULT DeviceDescribe::GetITunesCommonFolderType(
-    DeviceID id, vector<ITunesCommonFolderType>* folderTypes)
+    DeviceID id, IITunesCommonFolderTypeEnumerator** folderTypes)
 {
-    if (!folderTypes)
+    if (*folderTypes)
         return E_POINTER;
 
     auto deviceInfo = DeviceManager::GetInstance()->GetDeviceInfoByDeviceID(id);

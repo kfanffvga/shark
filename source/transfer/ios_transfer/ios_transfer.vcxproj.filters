@@ -14,6 +14,9 @@
     <ClCompile Include="ios_service_names.cpp" />
     <ClCompile Include="ios_connector_provider.cpp" />
     <ClCompile Include="string_list_enumerator.cpp" />
+    <ClCompile Include="application_key_names_enumerator.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="itunes_folder_type_enumerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="export.def" />
@@ -33,5 +36,8 @@
     <ClInclude Include="ios_connector_provider.h" />
     <ClInclude Include="value_enumerator.h" />
     <ClInclude Include="string_list_enumerator.h" />
+    <ClInclude Include="application_key_names_enumerator.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="itunes_folder_type_enumerator.h" />
   </ItemGroup>
 </Project>

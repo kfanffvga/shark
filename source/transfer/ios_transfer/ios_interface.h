@@ -30,9 +30,6 @@ enum ITunesCommonFolderType
     UNKNOWN_FOLDER
 };
 
-typedef std::vector<std::pair<std::wstring, ApplicationPropertyType>> 
-    ApplicationNamesDescribe;
-
 // 此处是自定义错误码
 static const HRESULT E_DEVICE_NOT_FOUND = 0x52013001L;
 static const HRESULT E_FILE_NOT_FOUND = 0x52013002L;
@@ -142,13 +139,13 @@ class ITransfer : public IUnknown
 {
 public:
     virtual HRESULT __stdcall TransferFileToITunes(
-        DeviceID id, const std::wstring& filePath,
+        DeviceID id, const wchar_t* filePath,
         ITunesCommonFolderType folderType, int* transferTaskID) = 0;
     virtual HRESULT __stdcall TransferFileAsIOSRing(
-        DeviceID id, const std::wstring& filePath, int* transferTaskID) = 0;
+        DeviceID id, const wchar_t* filePath, int* transferTaskID) = 0;
     virtual HRESULT __stdcall TransferFileToApplication(
-        DeviceID id, const std::wstring& filePath, 
-        const std::wstring& applicationID, int* transferTaskID) = 0;
+        DeviceID id, const wchar_t* filePath, const wchar_t* applicationID, 
+        int* transferTaskID) = 0;
     virtual HRESULT __stdcall CancelTransferTask(int transferTaskID) = 0;
 };
 
@@ -157,17 +154,16 @@ class IApplicationInfo : public IUnknown
 {
 public:
     virtual HRESULT __stdcall GetApplicationPropertyNameCollection(
-        ApplicationNamesDescribe* names) = 0;
+        IApplicationKeyNamesEnumerator** names) = 0;
     virtual HRESULT __stdcall GetApplicationIntValueByName(
-        const std::wstring& key, __int64* value) = 0;
+        const wchar_t* key, __int64* value) = 0;
     virtual HRESULT __stdcall GetApplicationFloatValueByName(
-        const std::wstring& key, float* value) = 0;
+        const wchar_t* key, float* value) = 0;
     virtual HRESULT __stdcall GetApplicationStringValueByName(
-        const std::wstring& key, std::wstring* value) = 0;
+        const wchar_t* key, wchar_t** value) = 0;
     virtual HRESULT __stdcall GetApplicationStringArrayValueByName(
-        const std::wstring& key, std::vector<int>* values) = 0;
-    virtual HRESULT __stdcall GetApplicationIcon(std::shared_ptr<char> buffer, 
-                                                 int size, int* realSize) = 0;
+        const wchar_t* key, IStringListEnumerator** values) = 0;
+    virtual HRESULT __stdcall GetApplicationIcon(char** buffer, int* size) = 0;
 };
 
 // 该接口定义ios系统的信息获取
@@ -178,17 +174,17 @@ public:
                                                  __int64* size) = 0;
     virtual HRESULT __stdcall GetTotalSpace(DeviceID id, __int64* size) = 0;
     virtual HRESULT __stdcall GetSerialNumber(DeviceID id, 
-                                              std::wstring* serialNumber) = 0;
+                                              wchar_t** serialNumber) = 0;
     virtual HRESULT __stdcall GetUniqueDefineID(
-        DeviceID id, std::wstring* uniqueDefineID) = 0;
+        DeviceID id, wchar_t** uniqueDefineID) = 0;
     virtual HRESULT __stdcall GetApplicationCount(DeviceID id, int* count) = 0;
     virtual HRESULT __stdcall GetApplicationIDs(
         DeviceID id, IStringListEnumerator** applicationIDs) = 0;
     virtual HRESULT __stdcall GetApplicationInfo(
-        DeviceID id, const std::wstring& applicationID,
+        DeviceID id, const wchar_t* applicationID,
         IApplicationInfo** applicationInfo) = 0;
     virtual HRESULT __stdcall GetITunesCommonFolderType(
-        DeviceID id, std::vector<ITunesCommonFolderType>* folderTypes) = 0;
+        DeviceID id, IITunesCommonFolderTypeEnumerator** folderTypes) = 0;
 
 };
 

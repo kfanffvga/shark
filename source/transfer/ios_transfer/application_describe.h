@@ -9,6 +9,7 @@
 #include "source/transfer/ios_transfer/unknown.h"
 
 struct DeviceInfo;
+class ApplicationKeyNamesEnumerator;
 
 class ApplicationDescribe : public Unknown
                           , public ios_transfer::IApplicationInfo
@@ -25,25 +26,26 @@ public:
 
 protected:
     virtual HRESULT __stdcall GetApplicationPropertyNameCollection(
-        ios_transfer::ApplicationNamesDescribe* names) override;
+        ios_transfer::IApplicationKeyNamesEnumerator** names) override;
 
     virtual HRESULT __stdcall GetApplicationIntValueByName(
-        const std::wstring& key, __int64* value) override;
+        const wchar_t* key, __int64* value) override;
 
     virtual HRESULT __stdcall GetApplicationFloatValueByName(
-        const std::wstring& key, float* value) override;
+        const wchar_t* key, float* value) override;
 
     virtual HRESULT __stdcall GetApplicationStringValueByName(
-        const std::wstring& key, std::wstring* value) override;
+        const wchar_t* key, wchar_t** value) override;
 
     virtual HRESULT __stdcall GetApplicationStringArrayValueByName(
-        const std::wstring& key, std::vector<int>* values) override;
+        const wchar_t* key, 
+        ios_transfer::IStringListEnumerator** values) override;
 
-    virtual HRESULT __stdcall GetApplicationIcon(
-        std::shared_ptr<char> buffer, int size, int* realSize) override;
+    virtual HRESULT __stdcall GetApplicationIcon(char** buffer, 
+                                                 int* size) override;
 
 private:
-    void FillkeyAndTypeInDesc(ios_transfer::ApplicationNamesDescribe* names,
+    void FillkeyAndTypeInDesc(ApplicationKeyNamesEnumerator* names,
                               void* node, const std::wstring& currentKey);
 
     std::weak_ptr<DeviceInfo> deviceInfo_;

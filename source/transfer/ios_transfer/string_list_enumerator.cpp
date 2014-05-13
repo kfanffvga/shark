@@ -1,5 +1,7 @@
 #include "source/transfer/ios_transfer/string_list_enumerator.h"
 
+#include "source/transfer/ios_transfer/util.h"
+
 using std::wstring;
 
 StringListEnumerator::StringListEnumerator()
@@ -36,10 +38,7 @@ HRESULT StringListEnumerator::Next(wchar_t** value)
 
     wstring element;
     HRESULT hr = valueEnumerator_.GetNextElement(&element);
-    const uint32 bufferSize = (element.size() + 1) * sizeof(wchar_t);
-    *value = reinterpret_cast<wchar_t*>(CoTaskMemAlloc(bufferSize));
-    memset(*value, 0, bufferSize);
-    memcpy(*value, element.c_str(), element.size() * sizeof(wchar_t));
+    WStringToWChar(element, value);
     return hr;
 }
 

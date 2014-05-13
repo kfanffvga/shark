@@ -72,7 +72,7 @@ HRESULT FileTransfer::NonDelegateQueryInterface(const GUID& iid, void** v)
     return ClassProvider::GetInstance()->QueryInterface(iid, v);
 }
 
-HRESULT FileTransfer::TransferFileToITunes(DeviceID id, const wstring& filePath, 
+HRESULT FileTransfer::TransferFileToITunes(DeviceID id, const wchar_t* filePath, 
                                            ITunesCommonFolderType folderType, 
                                            int* transferTaskID)
 {
@@ -80,27 +80,29 @@ HRESULT FileTransfer::TransferFileToITunes(DeviceID id, const wstring& filePath,
 }
 
 HRESULT FileTransfer::TransferFileAsIOSRing(DeviceID id, 
-                                            const wstring& filePath, 
+                                            const wchar_t* filePath, 
                                             int* transferTaskID)
 {
     return E_NOTIMPL;
 }
 
 HRESULT FileTransfer::TransferFileToApplication(DeviceID id, 
-                                                const wstring& filePath, 
-                                                const wstring& applicationID, 
+                                                const wchar_t* filePath, 
+                                                const wchar_t* applicationID, 
                                                 int* transferTaskID)
 {
-    if (!PathExists(FilePath(filePath)))
+    FilePath pathValue(filePath);
+    if (!PathExists(pathValue))
         return ios_transfer::E_FILE_NOT_FOUND;
 
     auto deviceInfo = DeviceManager::GetInstance()->GetDeviceInfoByDeviceID(id);
     if (!deviceInfo)
         return ios_transfer::E_DEVICE_NOT_FOUND;
 
-    auto condition = [applicationID] (const SingleApplicationInfo& info) -> bool
+    wstring appid(applicationID);
+    auto condition = [appid] (const SingleApplicationInfo& info) -> bool
     {
-        return info.ID == SysWideToUTF8(applicationID);
+        return info.ID == SysWideToUTF8(appid);
     };
 
     string udid;
@@ -122,7 +124,7 @@ HRESULT FileTransfer::TransferFileToApplication(DeviceID id,
     thread_->message_loop()->PostTask(
         FROM_HERE, 
         Bind(&FileTransfer::TransferFileToApplicationPrivate, this, 
-             udid, SysWideToUTF8(applicationID), filePath, *transferTaskID));
+             udid, SysWideToUTF8(appid), pathValue.value(), *transferTaskID));
     return S_OK;
 }
 
