@@ -104,11 +104,15 @@ int main(int argc, wchar_t* argv[])
         new DeviceNotifyReceiver());
     v->RegisterDeviceNotifition(deviceNotifyReceiver.get());
 
+    DeviceID alreadRunID = -1;
     while (true)
     {
         if (!deviceNotifyReceiver->GetDeviceIDs().empty())
         {
             DeviceID id = deviceNotifyReceiver->GetDeviceIDs()[0];
+            if (id == alreadRunID)
+                continue;
+            
             IDeviceDescribe* deviceDesc;
             v->QueryInterface(ios_transfer::IID_DeviceDescribe, 
                               reinterpret_cast<void**>(&deviceDesc));
@@ -128,6 +132,16 @@ int main(int argc, wchar_t* argv[])
             deviceDesc->GetApplicationCount(id, &count);
             deviceDesc->Release();
 
+            ios_transfer::ITransfer* transfer = nullptr;
+            hr = v->QueryInterface(ios_transfer::IID_ITransfer, 
+                                   reinterpret_cast<void**>(&transfer));
+
+            int transferID = 0;
+            transfer->TransferFileToApplication(
+                id, L"D:/study/T-REC-H.265-201304-I!!PDF-E.pdf", 
+                L"com.adobe.Adobe-Reader", &transferID);
+
+            alreadRunID = id;
         }
         Sleep(100);
     }
