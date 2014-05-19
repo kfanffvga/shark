@@ -2,8 +2,10 @@
 #define _APPLICATION_DESCRIBE_H_
 
 #include <memory>
+#include <vector>
 
 #include "third_party/chromium/base/basictypes.h"
+#include "third_party/lib_plist/include/plist/plist.h"
 
 #include "source/transfer/ios_transfer/ios_interface.h"
 #include "source/transfer/ios_transfer/unknown.h"
@@ -47,6 +49,15 @@ protected:
 private:
     void FillkeyAndTypeInDesc(ApplicationKeyNamesEnumerator* names,
                               void* node, const std::wstring& currentKey);
+    
+    bool FindValueByKey(std::wstring key, std::vector<std::string>* values, 
+                        ios_transfer::ApplicationPropertyType* valueType);
+
+    ios_transfer::ApplicationPropertyType PListTypeToApplicationPropertyType(
+        plist_type type);
+
+    bool GetValueByPListNode(void* node, std::string* value);
+    bool GetArrayValueByPlistNode(void* node, std::vector<std::string>* values);
 
     std::weak_ptr<DeviceInfo> deviceInfo_;
     std::string applicationInfo_;

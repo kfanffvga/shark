@@ -18,6 +18,7 @@ using ios_transfer::IDeviceDescribe;
 using ios_transfer::IInitialzedConfigure;
 using ios_transfer::DeviceID;
 using ios_transfer::IStringListEnumerator;
+using ios_transfer::IApplicationKeyNamesEnumerator;
 
 class DeviceNotifyReceiver : public Unknown
                            , public IDeviceNotifition
@@ -123,6 +124,33 @@ int main(int argc, wchar_t* argv[])
             enumerator->BeginEnum();
             while (enumerator->Next(&c) == S_OK)
             {
+                ios_transfer::IApplicationInfo* applicationInfo = nullptr;
+                deviceDesc->GetApplicationInfo(id, c, &applicationInfo);
+
+                IApplicationKeyNamesEnumerator* applicationKeyNameEnum = nullptr;
+                applicationInfo->GetApplicationPropertyNameCollection(
+                    &applicationKeyNameEnum);
+                applicationKeyNameEnum->BeginEnum();
+                wchar_t* keyName = nullptr;
+                ios_transfer::ApplicationPropertyType valueType = 
+                    ios_transfer::ApplicationPropertyType::UNKNOWN_TYPE;
+                while (applicationKeyNameEnum->Next(&keyName, &valueType) == S_OK)
+                {
+                    if (valueType == ios_transfer::ApplicationPropertyType::INT64_TYPE)
+                    {
+                        int64 aa = 0;
+                        applicationInfo->GetApplicationIntValueByName(keyName, &aa);
+                    }
+                    else if (valueType == ios_transfer::ApplicationPropertyType::STRING_ARRAY_TYPE)
+                    {
+                        IStringListEnumerator* stringEnum = nullptr;
+                        applicationInfo->GetApplicationStringArrayValueByName(keyName, &stringEnum);
+                    }
+                    CoTaskMemFree(keyName);
+                    keyName = nullptr;
+                }
+
+                applicationInfo->Release();
                 CoTaskMemFree(c);
                 c = nullptr;
             }

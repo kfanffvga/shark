@@ -256,9 +256,9 @@ bool FileTransfer::TransferFileToIOSDevice(afc_client_private* afcc,
             // 从文件中读取数据到缓存
             if (buffer.second.first == buffer.second.second)
             {
-                int restSize = static_cast<int>(
-                    fileSize - static_cast<int64>(stream.tellg()));
-                int readSize = std::min(bufferSize, restSize);
+                int64 restSize = fileSize - static_cast<int64>(stream.tellg());
+                int readSize = static_cast<int>(
+                    std::min(static_cast<int64>(bufferSize), restSize));
                 stream.read(buffer.first.get(), readSize);
                 buffer.second.first = readSize;
                 buffer.second.second = 0;
@@ -289,7 +289,7 @@ bool FileTransfer::TransferFileToIOSDevice(afc_client_private* afcc,
             if (transferProcessNotify)
                 transferProcessNotify->NotifyTransferProgress(
                     task.first, 
-                    static_cast<int>(sendedTotalSize / fileSize * 100));
+                    static_cast<int>(sendedTotalSize * 100 / fileSize));
 
             if (task.second->IsSet())
                 break;

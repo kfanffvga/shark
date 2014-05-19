@@ -1,10 +1,6 @@
 ﻿#ifndef _IOS_INTERFACE_H_
 #define _IOS_INTERFACE_H_
 
-#include <string>
-#include <utility>
-#include <vector>
-
 #include <Unknwn.h>
 
 namespace ios_transfer
@@ -17,7 +13,8 @@ enum ApplicationPropertyType
     FLOAT_TYPE,
     BOOLEAN_TYPE,
     STRING_TYPE,
-    STRING_ARRAY_TYPE
+    STRING_ARRAY_TYPE,
+    UNKNOWN_TYPE
 };
 
 enum ITunesCommonFolderType

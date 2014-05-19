@@ -27,7 +27,7 @@ HRESULT ApplicationKeyNamesEnumerator::BeginEnum()
 HRESULT __stdcall ApplicationKeyNamesEnumerator::Next(
     wchar_t** key, ios_transfer::ApplicationPropertyType* propertyType)
 {
-    if (*key || propertyType)
+    if (*key || (!propertyType))
         return E_POINTER;
 
     ApplicationKeyNamesEnumerator::ApplicationNameDescribe element;
