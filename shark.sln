@@ -227,6 +227,140 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VC10", "VC10", "{FDA1A7F6-C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libxml2", "third_party\lib_xml\libxml2\win32\VC10\libxml2.vcxproj", "{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ffmpeg", "ffmpeg", "{29BA45A0-3AAB-4D98-97B1-56CFE4A0BCDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{DC38EB9D-09E7-4B2E-86FB-8365B008363B}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\lib\libavcodec.a = third_party\ffmpeg\lib\libavcodec.a
+		third_party\ffmpeg\lib\libavdevice.a = third_party\ffmpeg\lib\libavdevice.a
+		third_party\ffmpeg\lib\libavfilter.a = third_party\ffmpeg\lib\libavfilter.a
+		third_party\ffmpeg\lib\libavformat.a = third_party\ffmpeg\lib\libavformat.a
+		third_party\ffmpeg\lib\libavresample.a = third_party\ffmpeg\lib\libavresample.a
+		third_party\ffmpeg\lib\libavutil.a = third_party\ffmpeg\lib\libavutil.a
+		third_party\ffmpeg\lib\libswresample.a = third_party\ffmpeg\lib\libswresample.a
+		third_party\ffmpeg\lib\libswscale.a = third_party\ffmpeg\lib\libswscale.a
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libavcodec", "libavcodec", "{ED5C4A4A-B8E7-4B76-9F1D-3F5247C36D8F}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libavcodec\avcodec.h = third_party\ffmpeg\include\libavcodec\avcodec.h
+		third_party\ffmpeg\include\libavcodec\avfft.h = third_party\ffmpeg\include\libavcodec\avfft.h
+		third_party\ffmpeg\include\libavcodec\dxva2.h = third_party\ffmpeg\include\libavcodec\dxva2.h
+		third_party\ffmpeg\include\libavcodec\old_codec_ids.h = third_party\ffmpeg\include\libavcodec\old_codec_ids.h
+		third_party\ffmpeg\include\libavcodec\vaapi.h = third_party\ffmpeg\include\libavcodec\vaapi.h
+		third_party\ffmpeg\include\libavcodec\vda.h = third_party\ffmpeg\include\libavcodec\vda.h
+		third_party\ffmpeg\include\libavcodec\vdpau.h = third_party\ffmpeg\include\libavcodec\vdpau.h
+		third_party\ffmpeg\include\libavcodec\version.h = third_party\ffmpeg\include\libavcodec\version.h
+		third_party\ffmpeg\include\libavcodec\xvmc.h = third_party\ffmpeg\include\libavcodec\xvmc.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libavdevice", "libavdevice", "{6CAC2CA6-F6C9-4048-9D16-11D1F5C21917}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libavdevice\avdevice.h = third_party\ffmpeg\include\libavdevice\avdevice.h
+		third_party\ffmpeg\include\libavdevice\version.h = third_party\ffmpeg\include\libavdevice\version.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libavfilter", "libavfilter", "{E5F1889A-9071-478E-86FB-1537CDB22019}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libavfilter\asrc_abuffer.h = third_party\ffmpeg\include\libavfilter\asrc_abuffer.h
+		third_party\ffmpeg\include\libavfilter\avcodec.h = third_party\ffmpeg\include\libavfilter\avcodec.h
+		third_party\ffmpeg\include\libavfilter\avfilter.h = third_party\ffmpeg\include\libavfilter\avfilter.h
+		third_party\ffmpeg\include\libavfilter\avfiltergraph.h = third_party\ffmpeg\include\libavfilter\avfiltergraph.h
+		third_party\ffmpeg\include\libavfilter\buffersink.h = third_party\ffmpeg\include\libavfilter\buffersink.h
+		third_party\ffmpeg\include\libavfilter\buffersrc.h = third_party\ffmpeg\include\libavfilter\buffersrc.h
+		third_party\ffmpeg\include\libavfilter\version.h = third_party\ffmpeg\include\libavfilter\version.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libavformat", "libavformat", "{A0A2C352-CFA7-4641-A0E3-0205F553DF8D}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libavformat\avformat.h = third_party\ffmpeg\include\libavformat\avformat.h
+		third_party\ffmpeg\include\libavformat\avio.h = third_party\ffmpeg\include\libavformat\avio.h
+		third_party\ffmpeg\include\libavformat\version.h = third_party\ffmpeg\include\libavformat\version.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libavresample", "libavresample", "{E59296E7-A348-4371-8264-C9AA4802D9FB}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libavresample\avresample.h = third_party\ffmpeg\include\libavresample\avresample.h
+		third_party\ffmpeg\include\libavresample\version.h = third_party\ffmpeg\include\libavresample\version.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libavutil", "libavutil", "{C9CF5DF3-35FA-4D96-8C6C-132B69EE6675}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libavutil\adler32.h = third_party\ffmpeg\include\libavutil\adler32.h
+		third_party\ffmpeg\include\libavutil\aes.h = third_party\ffmpeg\include\libavutil\aes.h
+		third_party\ffmpeg\include\libavutil\attributes.h = third_party\ffmpeg\include\libavutil\attributes.h
+		third_party\ffmpeg\include\libavutil\audio_fifo.h = third_party\ffmpeg\include\libavutil\audio_fifo.h
+		third_party\ffmpeg\include\libavutil\audioconvert.h = third_party\ffmpeg\include\libavutil\audioconvert.h
+		third_party\ffmpeg\include\libavutil\avassert.h = third_party\ffmpeg\include\libavutil\avassert.h
+		third_party\ffmpeg\include\libavutil\avconfig.h = third_party\ffmpeg\include\libavutil\avconfig.h
+		third_party\ffmpeg\include\libavutil\avstring.h = third_party\ffmpeg\include\libavutil\avstring.h
+		third_party\ffmpeg\include\libavutil\avutil.h = third_party\ffmpeg\include\libavutil\avutil.h
+		third_party\ffmpeg\include\libavutil\base64.h = third_party\ffmpeg\include\libavutil\base64.h
+		third_party\ffmpeg\include\libavutil\blowfish.h = third_party\ffmpeg\include\libavutil\blowfish.h
+		third_party\ffmpeg\include\libavutil\bprint.h = third_party\ffmpeg\include\libavutil\bprint.h
+		third_party\ffmpeg\include\libavutil\bswap.h = third_party\ffmpeg\include\libavutil\bswap.h
+		third_party\ffmpeg\include\libavutil\buffer.h = third_party\ffmpeg\include\libavutil\buffer.h
+		third_party\ffmpeg\include\libavutil\channel_layout.h = third_party\ffmpeg\include\libavutil\channel_layout.h
+		third_party\ffmpeg\include\libavutil\common.h = third_party\ffmpeg\include\libavutil\common.h
+		third_party\ffmpeg\include\libavutil\cpu.h = third_party\ffmpeg\include\libavutil\cpu.h
+		third_party\ffmpeg\include\libavutil\crc.h = third_party\ffmpeg\include\libavutil\crc.h
+		third_party\ffmpeg\include\libavutil\dict.h = third_party\ffmpeg\include\libavutil\dict.h
+		third_party\ffmpeg\include\libavutil\downmix_info.h = third_party\ffmpeg\include\libavutil\downmix_info.h
+		third_party\ffmpeg\include\libavutil\error.h = third_party\ffmpeg\include\libavutil\error.h
+		third_party\ffmpeg\include\libavutil\eval.h = third_party\ffmpeg\include\libavutil\eval.h
+		third_party\ffmpeg\include\libavutil\ffversion.h = third_party\ffmpeg\include\libavutil\ffversion.h
+		third_party\ffmpeg\include\libavutil\fifo.h = third_party\ffmpeg\include\libavutil\fifo.h
+		third_party\ffmpeg\include\libavutil\file.h = third_party\ffmpeg\include\libavutil\file.h
+		third_party\ffmpeg\include\libavutil\frame.h = third_party\ffmpeg\include\libavutil\frame.h
+		third_party\ffmpeg\include\libavutil\hmac.h = third_party\ffmpeg\include\libavutil\hmac.h
+		third_party\ffmpeg\include\libavutil\imgutils.h = third_party\ffmpeg\include\libavutil\imgutils.h
+		third_party\ffmpeg\include\libavutil\intfloat.h = third_party\ffmpeg\include\libavutil\intfloat.h
+		third_party\ffmpeg\include\libavutil\intfloat_readwrite.h = third_party\ffmpeg\include\libavutil\intfloat_readwrite.h
+		third_party\ffmpeg\include\libavutil\intreadwrite.h = third_party\ffmpeg\include\libavutil\intreadwrite.h
+		third_party\ffmpeg\include\libavutil\lfg.h = third_party\ffmpeg\include\libavutil\lfg.h
+		third_party\ffmpeg\include\libavutil\log.h = third_party\ffmpeg\include\libavutil\log.h
+		third_party\ffmpeg\include\libavutil\lzo.h = third_party\ffmpeg\include\libavutil\lzo.h
+		third_party\ffmpeg\include\libavutil\macros.h = third_party\ffmpeg\include\libavutil\macros.h
+		third_party\ffmpeg\include\libavutil\mathematics.h = third_party\ffmpeg\include\libavutil\mathematics.h
+		third_party\ffmpeg\include\libavutil\md5.h = third_party\ffmpeg\include\libavutil\md5.h
+		third_party\ffmpeg\include\libavutil\mem.h = third_party\ffmpeg\include\libavutil\mem.h
+		third_party\ffmpeg\include\libavutil\murmur3.h = third_party\ffmpeg\include\libavutil\murmur3.h
+		third_party\ffmpeg\include\libavutil\old_pix_fmts.h = third_party\ffmpeg\include\libavutil\old_pix_fmts.h
+		third_party\ffmpeg\include\libavutil\opt.h = third_party\ffmpeg\include\libavutil\opt.h
+		third_party\ffmpeg\include\libavutil\parseutils.h = third_party\ffmpeg\include\libavutil\parseutils.h
+		third_party\ffmpeg\include\libavutil\pixdesc.h = third_party\ffmpeg\include\libavutil\pixdesc.h
+		third_party\ffmpeg\include\libavutil\pixfmt.h = third_party\ffmpeg\include\libavutil\pixfmt.h
+		third_party\ffmpeg\include\libavutil\random_seed.h = third_party\ffmpeg\include\libavutil\random_seed.h
+		third_party\ffmpeg\include\libavutil\rational.h = third_party\ffmpeg\include\libavutil\rational.h
+		third_party\ffmpeg\include\libavutil\replaygain.h = third_party\ffmpeg\include\libavutil\replaygain.h
+		third_party\ffmpeg\include\libavutil\ripemd.h = third_party\ffmpeg\include\libavutil\ripemd.h
+		third_party\ffmpeg\include\libavutil\samplefmt.h = third_party\ffmpeg\include\libavutil\samplefmt.h
+		third_party\ffmpeg\include\libavutil\sha.h = third_party\ffmpeg\include\libavutil\sha.h
+		third_party\ffmpeg\include\libavutil\sha512.h = third_party\ffmpeg\include\libavutil\sha512.h
+		third_party\ffmpeg\include\libavutil\stereo3d.h = third_party\ffmpeg\include\libavutil\stereo3d.h
+		third_party\ffmpeg\include\libavutil\time.h = third_party\ffmpeg\include\libavutil\time.h
+		third_party\ffmpeg\include\libavutil\timecode.h = third_party\ffmpeg\include\libavutil\timecode.h
+		third_party\ffmpeg\include\libavutil\timestamp.h = third_party\ffmpeg\include\libavutil\timestamp.h
+		third_party\ffmpeg\include\libavutil\version.h = third_party\ffmpeg\include\libavutil\version.h
+		third_party\ffmpeg\include\libavutil\xtea.h = third_party\ffmpeg\include\libavutil\xtea.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libswresample", "libswresample", "{1DB893F1-842B-40CC-85C2-669956AB74CF}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libswresample\swresample.h = third_party\ffmpeg\include\libswresample\swresample.h
+		third_party\ffmpeg\include\libswresample\version.h = third_party\ffmpeg\include\libswresample\version.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{999DAC78-1259-4BA3-B4BD-03020287F7C2}"
+	ProjectSection(SolutionItems) = preProject
+		third_party\ffmpeg\include\libswscale\swscale.h = third_party\ffmpeg\include\libswscale\swscale.h
+		third_party\ffmpeg\include\libswscale\version.h = third_party\ffmpeg\include\libswscale\version.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "media", "source\media\media.vcxproj", "{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -393,6 +527,18 @@ Global
 		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release|Win32.ActiveCfg = Release|Win32
 		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release|Win32.Build.0 = Release|Win32
 		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}.Release|x64.ActiveCfg = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Debug|Win32.Build.0 = Debug|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Debug|x64.ActiveCfg = Debug|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release for Performance|Win32.ActiveCfg = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release for Performance|Win32.Build.0 = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release for Performance|x64.ActiveCfg = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release_disable_optimization|Win32.ActiveCfg = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release_disable_optimization|Win32.Build.0 = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release_disable_optimization|x64.ActiveCfg = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release|Win32.ActiveCfg = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release|Win32.Build.0 = Release|Win32
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -412,6 +558,7 @@ Global
 		{5E723DEF-22FC-4B4D-A2B1-86150B717DA1} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
 		{03F1BF83-4E10-4506-804B-7B517A89C608} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
 		{42BB06A8-390A-4D30-8436-C38664FA63B4} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
+		{29BA45A0-3AAB-4D98-97B1-56CFE4A0BCDC} = {106CCB0F-0C63-41D8-8A82-A40B8534F0F9}
 		{EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C} = {26E6D473-D7F8-4F14-A7CB-B5B37DADABF6}
 		{59CE1321-32F0-4F43-BECB-84C21B4BFC8D} = {EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C}
 		{ED99D404-F6B3-517A-4EA7-604A10269355} = {EB0E2186-FB9C-4B1F-901D-F76E1C61FF2C}
@@ -420,6 +567,7 @@ Global
 		{7D3AB9D5-D308-47CB-80C9-B0DBC3176FA9} = {74F3B875-0C3C-4583-B684-7A2A520F841F}
 		{F520FC6E-9665-4EB7-8C66-CF4D6D713385} = {74F3B875-0C3C-4583-B684-7A2A520F841F}
 		{70784E06-8F70-4CA9-AD82-9D727381447D} = {74F3B875-0C3C-4583-B684-7A2A520F841F}
+		{7923ACE4-E480-4F74-87E9-AF8D14AAF3A9} = {7D3AB9D5-D308-47CB-80C9-B0DBC3176FA9}
 		{CD08B130-8155-46F2-9A6A-1DD58F2C4840} = {F520FC6E-9665-4EB7-8C66-CF4D6D713385}
 		{001D1BD0-6795-471A-931D-EC32265F43D0} = {CD08B130-8155-46F2-9A6A-1DD58F2C4840}
 		{6F26C69D-46EE-40AE-92E3-CD205B2C18E0} = {F04F80BC-D064-432B-88AC-49124C2A59CF}
@@ -442,5 +590,15 @@ Global
 		{86645DA3-B13B-44B5-9E12-43C95E11CB12} = {A9396704-580B-47E5-80B4-448F6DA4D7D8}
 		{FDA1A7F6-C07C-447A-B006-39AAB1201FA3} = {86645DA3-B13B-44B5-9E12-43C95E11CB12}
 		{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C} = {FDA1A7F6-C07C-447A-B006-39AAB1201FA3}
+		{D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F} = {29BA45A0-3AAB-4D98-97B1-56CFE4A0BCDC}
+		{DC38EB9D-09E7-4B2E-86FB-8365B008363B} = {29BA45A0-3AAB-4D98-97B1-56CFE4A0BCDC}
+		{ED5C4A4A-B8E7-4B76-9F1D-3F5247C36D8F} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{6CAC2CA6-F6C9-4048-9D16-11D1F5C21917} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{E5F1889A-9071-478E-86FB-1537CDB22019} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{A0A2C352-CFA7-4641-A0E3-0205F553DF8D} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{E59296E7-A348-4371-8264-C9AA4802D9FB} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{C9CF5DF3-35FA-4D96-8C6C-132B69EE6675} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{1DB893F1-842B-40CC-85C2-669956AB74CF} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
+		{999DAC78-1259-4BA3-B4BD-03020287F7C2} = {D9EA8161-AEA7-4F74-93D1-FB3F5B0C3C3F}
 	EndGlobalSection
 EndGlobal
